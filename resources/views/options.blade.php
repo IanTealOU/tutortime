@@ -79,15 +79,12 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Tutor Time
+                    Options
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Tutorial</a>
-                    <a href="https://laracasts.com">Math</a>
-                    <a href="https://laravel-news.com">Science</a>
-                    <a href="https://forge.laravel.com">English</a>
-                    <a href="https://github.com/laravel/laravel">Options</a>
+                    <a href="https://laravel.com/docs">Sound</a>
+                    <a href="https://laracasts.com">Display</a>
                 </div>
             </div>
         </div>
