@@ -32,3 +32,7 @@ Route::get('/quiz', function () {
 Route::get('/myclass', function () {
     return view('teacherView');
 });
+
+Route::get('/login', function () {
+    return view('login');
+});
