@@ -13,13 +13,10 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('students', function (Blueprint $table) {
-            $table->increments('s_id')->unique();
-            $table->increments('users_id')->primary();
-            $table->string('name');
-            $table->string('class_id');
-            $table->string('course_id');
-            $table->string('level_id');
+        Schema::create('admin_user', function (Blueprint $table) {
+            $table->increments('users_id');
+            $table->string('questions');
+            $table->string('answers');
             $table->rememberToken();
             $table->timestamps();
         });
@@ -32,6 +29,6 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('students');
+        Schema::dropIfExists('teacher');
     }
 }

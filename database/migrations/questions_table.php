@@ -16,6 +16,7 @@ class CreateUsersTable extends Migration
         Schema::create('questions', function (Blueprint $table) {
             $table->increments('level_id');
             $table->increments('course_id');
+            $table->increments('pk_question_id')->unique();
             $table->increments('ques_id');
             $table->string('text_input');
             $table->rememberToken();
