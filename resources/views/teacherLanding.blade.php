@@ -22,8 +22,8 @@
 
         <div class="w3-padding-32">
             <div class="w3-bar w3-border">
-                <a href="#" class="w3-bar-item w3-button">Classroom</a>
-                <a href="#" class="w3-bar-item w3-button">Account</a>
+                <a href="teacherClass.blade.php" class="w3-bar-item w3-button">Classroom</a>
+                <a href="teacherAccount.blade.php" class="w3-bar-item w3-button">Account</a>
             </div>
         </div>
     </header>
