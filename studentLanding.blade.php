@@ -1,4 +1,4 @@
-<?php include('teacherServer.blade.php') ?>
+<?php include('studentServer.blade.php') ?>
 
 <!DOCTYPE html>
 <html>
@@ -19,20 +19,21 @@
 <div class="w3-content" style="max-width:1500px">
 
     <!-- Header -->
-    <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px"> <h1>Welcome <strong><?php echo $_SESSION['name']; ?></strong></h1>
+    <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px">
+      <h1>Welcome <strong><?php echo $_SESSION['name']; ?></strong></h1>
 
         <div class="w3-padding-32">
             <div class="w3-bar w3-border">
-                <a href="#" class="w3-bar-item w3-button">Classroom</a>
+                <a href="#" class="w3-bar-item w3-button">Testing</a>
                 <a href="#" class="w3-bar-item w3-button">Account</a>
-                <a href="welcome.blade.php" class="w3-bar-item w3-button">TutorTime Home</a>
-                <a href="indexTeacher.blade.php?logout='1'" class="w3-bar-item w3-button">Logout</a>
-               
+                <a href="indexStudent.blade.php?logout='1'" class="w3-bar-item w3-button">Logout</a>
+                <p>
+            Home Page <a href="welcome.blade.php">TutorTime</a>
+        </p>
             </div>
         </div>
     </header>
-    <!-- End Page Content -->
-</div>
+
 
 <!-- notification message -->
         <?php if (isset($_SESSION['success'])) : ?>
@@ -52,7 +53,8 @@
         <?php endif ?>
 
 
-
+    <!-- End Page Content -->
+</div>
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large">
