@@ -1,3 +1,5 @@
+<?php include('studentServer.blade.php') ?>
+
 <!DOCTYPE html>
 <html>
 <title>W3.CSS Template</title>
@@ -18,15 +20,39 @@
 
     <!-- Header -->
     <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px">
-        <h1>John Doe</h1>
+      <h1>Welcome, <strong><?php echo $_SESSION['name']; ?></strong></h1>
 
         <div class="w3-padding-32">
             <div class="w3-bar w3-border">
-                <a href="#" class="w3-bar-item w3-button">Testing</a>
-                <a href="#" class="w3-bar-item w3-button">Account</a>
+                <a href="studentQuiz.blade.php" class="w3-bar-item w3-button">Testing</a>
+                <a href="studentLanding.blade.php" class="w3-bar-item w3-button">Grades</a>
+                <a href="indexStudent.blade.php?logout='1'" class="w3-bar-item w3-button">Logout</a>
+                <p>
+            Go to: <a href="welcome.blade.php">TutorTime</a>
+        </p>
             </div>
         </div>
     </header>
+
+
+<!-- notification message -->
+        <?php if (isset($_SESSION['success'])) : ?>
+            <div class="error success" >
+                <h3>
+                    <?php 
+                        echo $_SESSION['success']; 
+                        unset($_SESSION['success']);
+                    ?>
+                </h3>
+            </div>
+        <?php endif ?>
+
+        <!-- logged in teacher information -->
+        <?php  if (isset($_SESSION['name'])) : ?>
+            
+        <?php endif ?>
+
+
     <!-- End Page Content -->
 </div>
 

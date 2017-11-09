@@ -1,3 +1,5 @@
+<?php include('adminServer.blade.php') ?>
+
 <!DOCTYPE html>
 <html>
 <title>W3.CSS Template</title>
@@ -11,73 +13,6 @@
     h1 {letter-spacing: 6px}
     .w3-row-padding img {margin-bottom: 12px}
 </style>
-
-<link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
-<!-- Styles -->
-<style>
-    html, body {
-        background-color: #fff;
-        color: #636b6f;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 100;
-        height: 100vh;
-        margin: 0;
-    }
-
-    .full-height {
-        height: 10vh;
-    }
-
-    .flex-center {
-        align-items: center;
-        display: flex;
-        justify-content: center;
-    }
-
-    .position-ref {
-        position: relative;
-    }
-
-    .top-right {
-        position: absolute;
-        right: 10px;
-        top: 18px;
-    }
-
-    .content {
-        text-align: center;
-    }
-
-    .title {
-        font-size: 84px;
-    }
-
-    .links > a {
-        color: #636b6f;
-        padding: 0 25px;
-        font-size: 12px;
-        font-weight: 600;
-        letter-spacing: .1rem;
-        text-decoration: none;
-        text-transform: uppercase;
-    }
-
-    .m-b-md {
-        margin-bottom: 5px;
-    }
-
-</style>
-
-<header>
-    <div class="flex-center position-ref full-height">
-
-        <div class="top-right links">
-
-            <a href="welcome.blade.php">Logout</a>
-        </div>
-</header>
-
 <body>
 
 <!-- !PAGE CONTENT! -->
@@ -85,16 +20,34 @@
 
     <!-- Header -->
     <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px">
-        <h1>John Doe</h1>
+        <h1>Welcome, <strong><?php echo $_SESSION['name']; ?></strong></h1>
 
         <div class="w3-padding-32">
             <div class="w3-bar w3-border">
-                <a href="adminClass.blade.php" class="w3-bar-item w3-button">Classroom & Teachers</a>
-                <a href="adminAccount.blade.php" class="w3-bar-item w3-button">Account</a>
+                <a href="adminClass.blade.php" class="w3-bar-item w3-button">Add Classroom</a>
+                <a href="passwordReset.blade.php" class="w3-bar-item w3-button">Account</a>
+                <a href="indexAdmin.blade.php?logout='1'" class="w3-bar-item w3-button">Logout</a>
             </div>
         </div>
     </header>
     <!-- End Page Content -->
+    <!-- notification message -->
+        <?php if (isset($_SESSION['success'])) : ?>
+            <div class="error success" >
+                <h3>
+                    <?php 
+                        echo $_SESSION['success']; 
+                        unset($_SESSION['success']);
+                    ?>
+                </h3>
+            </div>
+        <?php endif ?>
+
+        <!-- logged in teacher information -->
+        <?php  if (isset($_SESSION['name'])) : ?>
+            
+        <?php endif ?>
+
 </div>
 
 <!-- Footer -->

@@ -30,35 +30,28 @@
         height: 100vh;
         margin: 0;
     }
-
     .full-height {
         height: 10vh;
     }
-
     .flex-center {
         align-items: center;
         display: flex;
         justify-content: center;
     }
-
     .position-ref {
         position: relative;
     }
-
     .top-right {
         position: absolute;
         right: 10px;
         top: 18px;
     }
-
     .content {
         text-align: center;
     }
-
     .title {
         font-size: 84px;
     }
-
     .links > a {
         color: #636b6f;
         padding: 0 25px;
@@ -68,11 +61,9 @@
         text-decoration: none;
         text-transform: uppercase;
     }
-
     .m-b-md {
         margin-bottom: 5px;
     }
-
 </style>
 <header>
     <div class="flex-center position-ref full-height">
@@ -88,7 +79,6 @@
     * {
         box-sizing: border-box;
     }
-
     #myInput {
         background-image: url('/css/searchicon.png');
         background-position: 10px 10px;
@@ -99,31 +89,25 @@
         border: 1px solid #ddd;
         margin-bottom: 12px;
     }
-
     #myTable {
         border-collapse: collapse;
         width: 100%;
         border: 1px solid #ddd;
         font-size: 18px;
     }
-
     #myTable th, #myTable td {
         text-align: left;
         padding: 12px;
     }
-
     #myTable tr {
         border-bottom: 1px solid #ddd;
     }
-
     #myTable tr.header, #myTable tr:hover {
         background-color: #f1f1f1;
     }
-
     * {
         box-sizing: border-box;
     }
-
     #myInput2 {
         background-image: url('/css/searchicon.png');
         background-position: 10px 10px;
@@ -134,23 +118,19 @@
         border: 1px solid #ddd;
         margin-bottom: 12px;
     }
-
     #myTable2 {
         border-collapse: collapse;
         width: 100%;
         border: 1px solid #ddd;
         font-size: 18px;
     }
-
     #myTable2 th, #myTable2 td {
         text-align: left;
         padding: 12px;
     }
-
     #myTable2 tr {
         border-bottom: 1px solid #ddd;
     }
-
     #myTable2 tr.header, #myTable2 tr:hover {
         background-color: #f1f1f1;
     }
@@ -201,7 +181,6 @@
             }
         }
     }
-
     function myFunction() {
         var input, filter, table, tr, td, i;
         input = document.getElementById("myInput2");
@@ -230,4 +209,3 @@
 
 </body>
 </html>
-

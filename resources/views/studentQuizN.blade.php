@@ -55,7 +55,7 @@
 
         <h1>Welcome <strong><?php echo $_SESSION['name']; ?></strong></h1>
        <!-- <h1>Your Question is: <strong><?php echo $_SESSION['questions']; ?></strong></h1> -->
-       <a href="studentLanding.blade.php" class="w3-bar-item w3-button">Account</a>
+        <a href="studentLanding.blade.php" class="w3-bar-item w3-button">Account</a>
                 <a href="indexStudent.blade.php?logout='1'" class="w3-bar-item w3-button">Logout</a>
                 
             
@@ -64,20 +64,18 @@
 </div>
 
 <div class="quiz">
-    <h1> Math * Level 1 <h1> <h1> Question #1</h1>
+    <h1> Math * Level 1 <h1> <h1> Question #2</h1>
 
  <?php include('errors.blade.php'); ?>
 
          <!--      <h1>Your Question is: <strong><?php echo $_SESSION['questions']; ?></strong></h1> -->
 
-         
-
         <div class="input-group">
-             <h1>6 + 7 =</h1>
-            <h1> a. 67 </h1>
-            <h1>b. 10 </h1>
-            <h1>c. 16 </h1>
-            <h1>d. 13</h1>
+            <h1>9 + 9 =  </h1>
+            <h1> a. 99</h1>
+            <h1> b. 18</h1>
+            <h1> c. 16</h1>
+            <h1> d. 9</h1>
             <input type="text" name="answer" >
         </div>
            

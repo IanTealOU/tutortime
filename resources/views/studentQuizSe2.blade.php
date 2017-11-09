@@ -55,35 +55,33 @@
 
         <h1>Welcome <strong><?php echo $_SESSION['name']; ?></strong></h1>
        <!-- <h1>Your Question is: <strong><?php echo $_SESSION['questions']; ?></strong></h1> -->
-       <a href="studentLanding.blade.php" class="w3-bar-item w3-button">Account</a>
+
+                <a href="studentLanding.blade.php" class="w3-bar-item w3-button">Account</a>
                 <a href="indexStudent.blade.php?logout='1'" class="w3-bar-item w3-button">Logout</a>
-                
             
         </p>
     </form>
 </div>
 
 <div class="quiz">
-    <h1> Math * Level 1 <h1> <h1> Question #1</h1>
+    <h1> English * Level 1 <h1> <h1> Question #1</h1>
 
  <?php include('errors.blade.php'); ?>
 
          <!--      <h1>Your Question is: <strong><?php echo $_SESSION['questions']; ?></strong></h1> -->
 
-         
-
         <div class="input-group">
-             <h1>6 + 7 =</h1>
-            <h1> a. 67 </h1>
-            <h1>b. 10 </h1>
-            <h1>c. 16 </h1>
-            <h1>d. 13</h1>
+            <h1> 1. What is a Thesaurus? </h1>
+            <h1>a.  A list of synonyms for words.<h1>
+            <h1>b.  A type of dinosaur</h1>
+            
             <input type="text" name="answer" >
         </div>
            
-        <div class="input-group">
-          <a href="studentQuizN.blade.php">Submit</a>
+         <div class="input-group">
+          <a href="studentQuizS.blade.php">Submit</a>
         </div>
+        
     </form>
 
       <?php if (isset($_SESSION['success'])) : ?>
@@ -130,13 +128,14 @@
 
        <!-- <?php include('errors.blade.php'); ?>-->
 
-        <div class="input-group">
+                    
+       <div class="input-group">
             <h1> Choose your next Subject:</strong></h1>
             <input type="text" name="name" >
         </div>
             
         <div class="input-group">
-          <a href="studentQuizSe2.blade.php">Next</a>
+          <a href="studentQuiz.blade.php">Next</a>
         </div>
                 
         <p>

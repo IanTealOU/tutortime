@@ -227,12 +227,3 @@
     }
 </script>
 
-</div>
-
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large">
-    <p>Powered by TutorTime</p>
-</footer>
-
-</body>
-</html>
