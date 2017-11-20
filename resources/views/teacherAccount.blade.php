@@ -19,28 +19,56 @@
         height: 100vh;
         margin: 0;
     }
+<<<<<<< HEAD
     .full-height {
         height: 10vh;
     }
+=======
+
+    .full-height {
+        height: 10vh;
+    }
+
+>>>>>>> origin/ReworkDatabase
     .flex-center {
         align-items: center;
         display: flex;
         justify-content: center;
     }
+<<<<<<< HEAD
     .position-ref {
         position: relative;
     }
+=======
+
+    .position-ref {
+        position: relative;
+    }
+
+>>>>>>> origin/ReworkDatabase
     .top-right {
         position: absolute;
         right: 10px;
         top: 18px;
     }
+<<<<<<< HEAD
     .content {
         text-align: center;
     }
     .title {
         font-size: 84px;
     }
+=======
+
+    .content {
+        text-align: center;
+    }
+
+    .title {
+        font-size: 84px;
+    }
+
+>>>>>>> origin/ReworkDatabase
     .links > a {
         color: #636b6f;
         padding: 0 25px;
@@ -50,9 +78,17 @@
         text-decoration: none;
         text-transform: uppercase;
     }
+<<<<<<< HEAD
     .m-b-md {
         margin-bottom: 5px;
     }
+=======
+
+    .m-b-md {
+        margin-bottom: 5px;
+    }
+
+>>>>>>> origin/ReworkDatabase
 </style>
 <header>
     <div class="flex-center position-ref full-height">
@@ -97,4 +133,8 @@
 </footer>
 
 </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> origin/ReworkDatabase
