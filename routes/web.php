@@ -14,3 +14,21 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/', function () {
+    return view('home');
+});
+Route::get('/about', function () {
+    return view('tutorial');
+});
+Route::get('/options', function () {
+    return view('options');
+});
+Route::get('/quiz', function () {
+    return view('quiz');
+});
+Route::get('/myclass', function () {
+    return view('teacherView');
+});
+Route::get('/login', function () {
+    return view('login');
+});
