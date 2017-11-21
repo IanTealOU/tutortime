@@ -1,5 +1,4 @@
 <?php include('quizServer.blade.php') ?>
-<?php include('studentQuiz.blade.php') ?>
 
         <!DOCTYPE html>
 <html>
@@ -23,87 +22,51 @@
     }
 </style>
 <body>
+<form>
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-content" style="max-width:1500px">
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-content" style="max-width:1500px">
 
-    <!-- Header -->
-    <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px"></header>
-    <h1>Welcome<?php echo $_SESSION['name']; ?></h1>
-</div>
-
-<form method="post" action="questionLogin.blade.php">
-
-    <div class="questionLogin">
-        <div class="input-group">
-            <label> Enter your course name!</label>
-            <input type="text" name="course_name" value="<?php echo $course_name; ?>">
-        </div>
-
-        <div class="input-group">
-            <label> Enter Your Question?</label>
-            <input type="text" name="questions value=<?php echo $questions; ?>">
-        </div>
-
-        <div class="input-group">
-            <label> Enter the Answer to the Question?</label>
-            <input type="text" name=" value=<?php echo $answer; ?>">
-        </div>
-
-        <div class="input-group">
-            <button type="submit" class="btn" name="login_question">Submit</button>
-
-        </div>
-
-        <a href="teacherLanding.blade.php" class="w3-bar-item w3-button">Account</a>
-
-        <a href="welcome.blade.php" class="w3-bar-item w3-button">TutorTime Home</a>
-
-        <a href="indexQuiz.blade.php?logout='1'" class="w3-bar-item w3-button">Logout</a>
+        <!-- Header -->
+        <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px"></header>
+        <h1>Welcome, <?php echo $_SESSION['name']; ?></h1>
     </div>
+
+    <form method="post" action="questionLogin.blade.php">
+
+        <div class="questionLogin">
+            <div class="input-group">
+                <label> Enter your course name!</label>
+                <input type="text" name="course_name" value="">
+            </div>
+
+            <div class="input-group">
+                <label> Enter Your Question?</label>
+                <input type="text" name="questions" value="">
+
+            </div>
+
+            <div class="input-group">
+                <label> Enter the Answer to the Question?</label>
+                <input type="text" name="answer" value="">
+            </div>
+
+            <div class="input-group">
+                <button type="submit" class="btn" name="login_question">Submit</button>
+
+            </div>
+
+            <a href="teacherLanding.blade.php" class="w3-bar-item w3-button">Account</a>
+
+            <a href="welcome.blade.php" class="w3-bar-item w3-button">TutorTime Home</a>
+
+            <a href="indexQuiz.blade.php?logout='1'" class="w3-bar-item w3-button">Logout</a>
+        </div>
+    </form>
 </form>
-<!-- notification message -->
-<?php if (isset($_SESSION['questions'])) : ?>
-<div class="error success">
-    <h3>
-        <?php
-        echo $_SESSION['questions'];
-        unset($_SESSION['questions']);
-        ?>
-    </h3>
-</div>
-<?php endif ?>
-
-<!-- logged in teacher information -->
-<?php  if (isset($_SESSION['correct'])) : ?>
-<div class="error success">
-    <h3>
-        <?php
-        echo $_SESSION['correct'];
-        unset($_SESSION['correct']);
-        ?>
-    </h3>
-</div>
-<?php endif ?>
-
-
-<?php  if (isset($_SESSION['answer'])) : ?>
-<div class="error success">
-    <h3>
-        <?php
-        echo $_SESSION['answer'];
-        unset($_SESSION['answer']);
-        ?>
-    </h3>
-</div>
-
-<?php endif ?>
-
-
-
+</body>
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large">
     <p>Powered by TutorTime</p>
 </footer>
-</body>
 </html>

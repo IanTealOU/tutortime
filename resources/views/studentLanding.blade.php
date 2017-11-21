@@ -1,6 +1,6 @@
 <?php include('studentServer.blade.php') ?>
 
-<!DOCTYPE html>
+        <!DOCTYPE html>
 <html>
 <title>W3.CSS Template</title>
 <meta charset="UTF-8">
@@ -9,9 +9,17 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-    body,h1 {font-family: "Raleway", Arial, sans-serif}
-    h1 {letter-spacing: 6px}
-    .w3-row-padding img {margin-bottom: 12px}
+    body, h1 {
+        font-family: "Raleway", Arial, sans-serif
+    }
+
+    h1 {
+        letter-spacing: 6px
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
 </style>
 <body>
 
@@ -20,7 +28,7 @@
 
     <!-- Header -->
     <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px">
-      <h1>Welcome, <strong><?php echo $_SESSION['name']; ?></strong></h1>
+        <h1>Welcome, <strong><?php echo $_SESSION['name']; ?></strong></h1>
 
         <div class="w3-padding-32">
             <div class="w3-bar w3-border">
@@ -28,32 +36,32 @@
                 <a href="studentLanding.blade.php" class="w3-bar-item w3-button">Grades</a>
                 <a href="indexStudent.blade.php?logout='1'" class="w3-bar-item w3-button">Logout</a>
                 <p>
-            Go to: <a href="welcome.blade.php">TutorTime</a>
-        </p>
+                    Go to: <a href="welcome.blade.php">TutorTime</a>
+                </p>
             </div>
         </div>
     </header>
 
 
-<!-- notification message -->
-        <?php if (isset($_SESSION['success'])) : ?>
-            <div class="error success" >
-                <h3>
-                    <?php 
-                        echo $_SESSION['success']; 
-                        unset($_SESSION['success']);
-                    ?>
-                </h3>
-            </div>
-        <?php endif ?>
+    <!-- notification message -->
+    <?php if (isset($_SESSION['success'])) : ?>
+    <div class="error success">
+        <h3>
+            <?php
+            echo $_SESSION['success'];
+            unset($_SESSION['success']);
+            ?>
+        </h3>
+    </div>
+<?php endif ?>
 
-        <!-- logged in teacher information -->
-        <?php  if (isset($_SESSION['name'])) : ?>
+<!-- logged in teacher information -->
+<?php  if (isset($_SESSION['name'])) : ?>
             
         <?php endif ?>
 
 
-    <!-- End Page Content -->
+<!-- End Page Content -->
 </div>
 
 <!-- Footer -->

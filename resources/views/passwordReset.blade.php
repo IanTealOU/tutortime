@@ -1,5 +1,5 @@
 <?php include('teacherServer.blade.php') ?>
-<!DOCTYPE html>
+        <!DOCTYPE html>
 <html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -72,6 +72,7 @@
             <a href="teacherLanding.blade.php">Home</a>
 
         </div>
+    </div>
 </header>
 
 <body>
@@ -82,11 +83,11 @@
 
 <form method="post" action="welcome.blade.php">
 
-   <!--<?php include('errors.blade.php'); ?> -->
+<!--<?php include('errors.blade.php'); ?> -->
 
     <div class="input-group">
         <label>Old Password:</label>
-        <input type="password" name="password" >
+        <input type="password" name="password">
     </div>
     <div class="input-group">
         <label>New Password</label>

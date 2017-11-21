@@ -19,28 +19,35 @@
         height: 100vh;
         margin: 0;
     }
+
     .full-height {
         height: 10vh;
     }
+
     .flex-center {
         align-items: center;
         display: flex;
         justify-content: center;
     }
+
     .position-ref {
         position: relative;
     }
+
     .top-right {
         position: absolute;
         right: 10px;
         top: 18px;
     }
+
     .content {
         text-align: center;
     }
+
     .title {
         font-size: 84px;
     }
+
     .links > a {
         color: #636b6f;
         padding: 0 25px;
@@ -50,6 +57,7 @@
         text-decoration: none;
         text-transform: uppercase;
     }
+
     .m-b-md {
         margin-bottom: 5px;
     }
@@ -62,6 +70,7 @@
             <a href="adminLanding.blade.php">Home</a>
 
         </div>
+    </div>
 </header>
 
 <body>
@@ -72,11 +81,11 @@
 
 <form method="post" action="login.blade.php">
 
-  <!--  <?php include('errors.blade.php'); ?> -->
+<!--  <?php include('errors.blade.php'); ?> -->
 
     <div class="input-group">
         <label>Old Password:</label>
-        <input type="password" name="password" >
+        <input type="password" name="password">
     </div>
     <div class="input-group">
         <label>New Password</label>
