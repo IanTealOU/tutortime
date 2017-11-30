@@ -1,4 +1,7 @@
- <!DOCTYPE html>
+<?php include('quizServer.blade.php') ?>
+<?php include('studentQuiz.blade.php') ?>
+
+        <!DOCTYPE html>
 <html>
 <title>questionLogin</title>
 <meta charset="UTF-8">
@@ -26,36 +29,29 @@
 
     <!-- Header -->
     <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px"></header>
-    <h1>Welcome <?php echo $_SESSION['name']; ?></h1>
+    <h1>Welcome<?php echo $_SESSION['name']; ?></h1>
 </div>
 
 <form method="post" action="questionLogin.blade.php">
 
-    
+    <div class="questionLogin">
         <div class="input-group">
-            <label> Enter your course name</label>
+            <label> Enter your course name!</label>
             <input type="text" name="course_name" value="<?php echo $course_name; ?>">
         </div>
 
-        
-            <div class="input-group">
+        <div class="input-group">
             <label> Enter Your Question?</label>
-            <input type="text" name="questions" value="<?php echo $questions; ?>">
-        </div>
-
-        
-            <div class="input-group">
-            <label> Enter the Answer to the Question?</label>
-            <input type="text" name="answer" value="<?php echo $answer; ?>">
-        </div>
-        
-            <div class="input-group">
-            <label> Is this the Correct Answer? Yes=1</label>
-            <input type="text" name="correct" value="<?php echo $correct; ?>">
+            <input type="text" name="questions value=<?php echo $questions; ?>">
         </div>
 
         <div class="input-group">
-            <button type="submit" class="btn" name="reg_login">Submit</button>
+            <label> Enter the Answer to the Question?</label>
+            <input type="text" name=" value=<?php echo $answer; ?>">
+        </div>
+
+        <div class="input-group">
+            <button type="submit" class="btn" name="login_question">Submit</button>
 
         </div>
 
@@ -67,23 +63,41 @@
     </div>
 </form>
 <!-- notification message -->
-<?php
-//This file is the base for all pages in the site. When creating a new page, we just open this one, then save a copy as the new page.
-    include("dbconnect.blade.php");
-    if(!isset($_SESSION['admin'])) {
-    }
-    if(!isset($_GET['update'])) {
-        $_SESSION['addQuestion']="";
-    }
-?>
-    <h1>Add new category</h1>
-      <form action="index.php?page=addQuestionconfirm" method="post">
-        <p>Name: <input name="name" value="<?php echo $_SESSION['addQuestion']; ?>" /></p>
-        <p><input type="submit" /></p>
-      </form>
+<?php if (isset($_SESSION['questions'])) : ?>
+<div class="error success">
+    <h3>
+        <?php
+        echo $_SESSION['questions'];
+        unset($_SESSION['questions']);
+        ?>
+    </h3>
+</div>
+<?php endif ?>
+
+<!-- logged in teacher information -->
+<?php  if (isset($_SESSION['correct'])) : ?>
+<div class="error success">
+    <h3>
+        <?php
+        echo $_SESSION['correct'];
+        unset($_SESSION['correct']);
+        ?>
+    </h3>
+</div>
+<?php endif ?>
 
 
+<?php  if (isset($_SESSION['answer'])) : ?>
+<div class="error success">
+    <h3>
+        <?php
+        echo $_SESSION['answer'];
+        unset($_SESSION['answer']);
+        ?>
+    </h3>
+</div>
 
+<?php endif ?>
 
 
 
