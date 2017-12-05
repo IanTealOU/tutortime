@@ -19,6 +19,7 @@
         margin-bottom: 12px
     }
 </style>
+<<<<<<< HEAD
 <header>
     <div class="flex-center position-ref full-height">
 
@@ -28,6 +29,8 @@
 
         </div>
 </header>
+=======
+>>>>>>> cab55054412b6b92b5282f2fa804a26b21eb933b
 <body>
 
 <!-- !PAGE CONTENT! -->

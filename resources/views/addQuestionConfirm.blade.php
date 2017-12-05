@@ -18,9 +18,12 @@
     .w3-row-padding img {
         margin-bottom: 12px
     }
+<<<<<<< HEAD
     .content {
                 text-align: center;
             }
+=======
+>>>>>>> cab55054412b6b92b5282f2fa804a26b21eb933b
 </style>
 <body>
 

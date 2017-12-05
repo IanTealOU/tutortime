@@ -18,9 +18,12 @@
     .w3-row-padding img {
         margin-bottom: 12px
     }
+<<<<<<< HEAD
     .content {
                 text-align: center;
             }
+=======
+>>>>>>> cab55054412b6b92b5282f2fa804a26b21eb933b
 </style>
 <body>
 
@@ -38,8 +41,12 @@
 </form>
 <!-- notification message -->
 <?php
+<<<<<<< HEAD
    include("dbconnect.blade.php");
     session_start();
+=======
+   
+>>>>>>> cab55054412b6b92b5282f2fa804a26b21eb933b
     
     if(!isset($_SESSION['admin'])) {
         header("Location:index.blade.php");
@@ -62,7 +69,11 @@
     
 ?>
 <div class="maincontent">
+<<<<<<< HEAD
     <p><a href="adminLanding.blade.php">Back to admin</a></p>
+=======
+    <p><a href="index.blade.php?page=admin">Back to admin</a></p>
+>>>>>>> cab55054412b6b92b5282f2fa804a26b21eb933b
     <h1>Please enter your Question</h1>
     <form method="post" action="index.blade.php?page=confirmQuestion" enctype="multipart/form-data">
         <p>Question Name: <input type="text" name="name" value="<?php echo $_SESSION['addQuestionStock']['name']; ?>" /></p>

@@ -64,35 +64,40 @@
                 margin-bottom: 30px;
             }
         </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            
-                <div class="top-right links">
-                    
-                        <a href="login.blade.php">Login</a>
-<<<<<<< HEAD
-                        <a href="loginStudent.blade.php">Student Register</a>                        						
-=======
-                        						
->>>>>>> cab55054412b6b92b5282f2fa804a26b21eb933b
-                    
-                </div>
-            
+</head>
+<body>
+<?php
+//This file is the base for all pages in the site. When creating a new page, we just open this one, then save a copy as the new page.
 
-            <div class="content">
-                <div class="title m-b-md">
-                    TutorTime
-                </div>
+    error_reporting(1);
 
-                <div class="links">
-                    <a href="https://www.oakland.edu/"class="w3-bar-item w3-button">AboutUs</a>
-                    <a href="https://www.merriam-webster.com/dictionary/dictionary"class="w3-bar-item w3-button">Dictionary</a>
-                    <a href="http://www.edweek.org/tm/index.html"class="w3-bar-item w3-button">TeacherNews</a>
-                    <a href="https://www.britannica.com/class="w3-bar-item w3-button"">Encyclopedia</a>
-                    <a href="https://www.oakland.edu/"class="w3-bar-item w3-button">ContactUs</a>
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
+#echo "Welcome Back, ".$_POST['username']."!";
+
+    include("dbconnect.blade.php");
+    session_start();
+    if(isset($_GET['logout'])) {
+        unset($_SESSION['student']);
+    }
+    
+    if(isset($_POST['iexist']) and $_POST['iexist']=='yes') {
+        $loginstud_sql="INSERT into `user` (username,password) VALUES ('".$_POST['username']."','".($_POST['password'])."')";
+        $loginstud_query=mysqli_query($dbconnect, $loginstud_sql);
+        if(mysqli_num_rows($loginstud_query)>0) {
+           $loginstud_rs=mysqli_fetch_assoc($loginstud_query);
+           $_SESSION['student']=$loginstud_rs['username'];
+        } else {
+           header("Location:index.blade.php?page=student&error=loginstud");
+        }
+    }
+?>
+      <?php if(isset($_SESSION['student'])) {
+        echo "<p>You're already logged in!</p>";
+        } else {
+        echo '<form action="index.blade.php?page=student" method="post">
+            <p>Username:<input name="username"></p>
+            <p>Password:<input name="password" type="password"></p>
+            <input type="hidden" name="iexist" value="yes">
+            <p><input name="login" type="submit"></p>
+        </form>';
+        }
+        ?>

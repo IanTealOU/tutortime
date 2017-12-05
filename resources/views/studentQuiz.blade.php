@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 
+=======
+<?php include('dbconnect.blade.php') ?>
+>>>>>>> cab55054412b6b92b5282f2fa804a26b21eb933b
 <!DOCTYPE html>
 <html>
 <head>
