@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>TutorTime</title>
+        
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -70,8 +70,10 @@
             
                 <div class="top-right links">
                     
-                        <a href="login.blade.php">Login</a>
-                        <a href="loginStudent.blade.php">Student Register</a>                        						
+
+
+                        <a href="welcome.blade.php">Login</a>
+                        					
                     
                 </div>
             
@@ -82,6 +84,15 @@
                 </div>
 
                 <div class="links">
+                    <h1>Welcome to TutorTime</h1>
+                    <p>
+                        Company Information:
+
+                        :) :) :) :) :) :) :) :) :) :) :) :) :) :) 
+
+
+
+                            </p>
                     <a href="https://www.oakland.edu/"class="w3-bar-item w3-button">AboutUs</a>
                     <a href="https://www.merriam-webster.com/dictionary/dictionary"class="w3-bar-item w3-button">Dictionary</a>
                     <a href="http://www.edweek.org/tm/index.html"class="w3-bar-item w3-button">TeacherNews</a>

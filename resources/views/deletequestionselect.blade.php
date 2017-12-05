@@ -54,6 +54,7 @@
         margin-bottom: 5px;
     }
 </style>
+</style>
 <header>
     <div class="flex-center position-ref full-height">
 
@@ -63,38 +64,37 @@
 
         </div>
 </header>
-
 <body>
 
-<div class="header">
-    <h2>Change Password</h2>
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+    <!-- Header -->
+    <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px"></header>
+    
 </div>
 
-<form method="post" action="index.blade.php">
+<form method="post" action="deletecategoryselect.blade.php">
 
-  <!--  <?php include('errors.blade.php'); ?> -->
-
-    <div class="input-group">
-        <label>Old Password:</label>
-        <input type="password" name="password" >
-    </div>
-    <div class="input-group">
-        <label>New Password</label>
-        <input type="password" name="password">
-    </div>
-    <div class="input-group">
-        <label>Confirm Password</label>
-        <input type="password" name="password">
-    </div>
-    <div class="input-group">
-        <button type="submit" class="btn" name="login">Save</button>
-    </div>
+    
+    
 </form>
-
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large">
-    <p>Powered by TutorTime</p>
-</footer>
-
-</body>
-</html>
+<?php
+//This file is the base for all pages in the site. When creating a new page, we just open this one, then save a copy as the new page.
+	include("dbconnect.blade.php");
+	session_start();
+	if(!isset($_SESSION['admin'])) {
+		header("Location:index.blade.php");
+	}
+?>
+	<h1>Choose the Question to Delete</h1>
+      <?php $delcat_sql="SELECT * FROM stock";
+			$delcat_query=mysqli_query($dbconnect, $delcat_sql);
+			$delcat_rs=mysqli_fetch_assoc($delcat_query);
+			do { ?>
+			<p><a href="index.blade.php?page=deletequestionconfirm&question=<?php echo $delcat_rs['question']; ?>" class="w3-bar-item w3-button"><?php echo $delcat_rs['question']; ?></a></p>
+			
+			<?php
+			} while ($delcat_rs=mysqli_fetch_assoc($delcat_query));
+			?>
+			<a href="index.blade.php?page=admin&logout=true" class="w3-bar-item w3-button">Logout</a>

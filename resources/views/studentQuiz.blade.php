@@ -1,4 +1,4 @@
-<?php include('quizServer.blade.php') ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -46,17 +46,17 @@
 
 </head>
 <body>
+<?php include('dbconnect.blade.php') ?>
 
 <div class="sticky">
    <!-- <p>The sticky goes here</p> -->
-    <form method="post" action="studentQuiz.blade.php">
+   
 
         <?php include('errors.blade.php'); ?>
 
-        <h1>Welcome,<?php echo $_SESSION['name']; ?></h1>
-      
+              
        <a href="studentLanding.blade.php" class="w3-bar-item w3-button">Account</a>
-                <a href="indexStudent.blade.php?logout='1'" class="w3-bar-item w3-button">Logout</a>
+                <a href="index.blade.php?logout='1'" class="w3-bar-item w3-button">Logout</a>
                 
             
         </p>
@@ -65,14 +65,13 @@
 
 <div class="quiz">
    
-<form method="post" action="studentQuiz.blade.php">
 
             <ol> 
                 <li>
 
-                        <h3> Welcome,<?php echo $_SESSION['questions']; ?></h3>
+                        <h3> <?php echo $_SESSION['question']; ?></h3>
                         <div>
-                            <input type='radio' name='answer1a'id='correct' value='A'/><label for='answerA'>A) Correct</label>
+                            <input type='radio' name='answer'id='correct' value='A'/><label for='answerA'>A) Correct</label>
                             </div>
                 
             
@@ -82,7 +81,7 @@
                 
 
                            <div>
-                           <input type='radio' name='answer1b'id='correct' value='B'/><label for='answerB'>B) Correct</label>
+                           <input type='radio' name='answer'id='correct' value='B'/><label for='answerB'>B) Correct</label>
                             </div>
                
             
@@ -255,36 +254,36 @@
         </div>
     </form>
 
-    <?php if (isset($_SESSION['success'])) : ?>
+    <?php if (isset($_SESSION['queston'])) : ?>
             <div class="error success" >
                 <h3>
                     <?php 
-                        echo $_SESSION['success']; 
-                        unset($_SESSION['success']);
+                        echo $_SESSION['question']; 
+                        unset($_SESSION['question']);
                     ?>
                 </h3>
             </div>
         <?php endif ?>
 
         <!-- questions -->
-        <?php  if (isset($_SESSION['questions'])) : ?>
+        <?php  if (isset($_SESSION['question'])) : ?>
             
         <?php endif ?>
 
 
-         <?php if (isset($_SESSION['questions'])) : ?>
+         <?php if (isset($_SESSION['question'])) : ?>
             <div class="error success" >
                 <h3>
                     <?php 
-                        echo $_SESSION['questions']; 
-                        unset($_SESSION['questions']);
+                        echo $_SESSION['question']; 
+                        unset($_SESSION['question']);
                     ?>
                 </h3>
             </div>
         <?php endif ?>
 
         <!-- questions -->
-        <?php  if (isset($_SESSION['questions'])) : ?>
+        <?php  if (isset($_SESSION['question'])) : ?>
             
         <?php endif ?>
 
@@ -305,7 +304,7 @@
         </div>
             
         <div class="input-group">
-          <a href="studentQuizSe2.blade.php">Next</a>
+          <a href="studentQuiz.blade.php">Next</a>
         </div>
                 
         <p>
