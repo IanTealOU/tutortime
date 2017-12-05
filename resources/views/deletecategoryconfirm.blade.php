@@ -1,9 +1,9 @@
 <?php
 //This file is the base for all pages in the site. When creating a new page, we just open this one, then save a copy as the new page.
-	include("dbconnect.php");
+	include("dbconnect.blade.php");
 	session_start();
 	if(!isset($_SESSION['admin'])) {
-		header("Location:index.php");
+		header("Location:index.blade.php");
 	}
 ?>
 	<h1>Confirm Category to Delete</h1>
@@ -20,4 +20,4 @@
 				echo "Warning! There are ".$count." stock item(s) in this category. If you delete the category they will also be removed from the database";
 			} ?></p>
 			<p><?php echo "Do you really want to delete ".$delcat_rs['name']."?"; ?></p>
-			<p><a href="index.php?page=deletecategory&categoryID=<?php echo $_GET['categoryID']; ?>">Yes, delete it!</a> | <a href="index.php?page=deletecategoryselect">No, go back</a> | <a href="index.php?page=admin">Back to admin panel</a></p>
+			<p><a href="index.blade.php?page=deletecategory&categoryID=<?php echo $_GET['categoryID']; ?>">Yes, delete it!</a> | <a href="index.blade.php?page=deletecategoryselect">No, go back</a> | <a href="index.blade.php?page=admin">Back to admin panel</a></p>

@@ -1,4 +1,4 @@
-<?php include('quizServer.blade.php') ?>
+<?php include('dbconnect.blade.php') ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -56,7 +56,7 @@
         <h1>Welcome,<?php echo $_SESSION['name']; ?></h1>
       
        <a href="studentLanding.blade.php" class="w3-bar-item w3-button">Account</a>
-                <a href="indexStudent.blade.php?logout='1'" class="w3-bar-item w3-button">Logout</a>
+                <a href="index.blade.php?logout='1'" class="w3-bar-item w3-button">Logout</a>
                 
             
         </p>
@@ -305,7 +305,7 @@
         </div>
             
         <div class="input-group">
-          <a href="studentQuizSe2.blade.php">Next</a>
+          <a href="studentQuiz.blade.php">Next</a>
         </div>
                 
         <p>

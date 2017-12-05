@@ -70,12 +70,8 @@
             
                 <div class="top-right links">
                     
-                        <a href="teacherLogin.blade.php">Teacher Login</a>
-                        <a href="studentLogin.blade.php">Student Login</a>
-                        <a href="adminLogin.blade.php">Admin Login</a>
-                        <a href="registerAdmin.blade.php">Admin Register</a>
-						<a href="registerTeacher.blade.php">Teacher Register</a>
-						<a href="registerStudent.blade.php">Student Register</a>						
+                        <a href="login.blade.php">Login</a>
+                        						
                     
                 </div>
             

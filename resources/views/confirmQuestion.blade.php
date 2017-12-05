@@ -2,7 +2,7 @@
 	session_start();
 	
 	if(!isset($_SESSION['admin'])) {
-		header("Location:index.php");
+		header("Location:index.blade.php");
 	}
 	
 	if(isset($_POST['submit'])) {
@@ -13,7 +13,7 @@
 		$_SESSION['addQuestionStock']['question']=$_POST['question'];
 		$_SESSION['addQuestionStock']['answer']=$_POST['answer'];
 	} else {
-		header("Location:index.php");
+		header("Location:index.blade.php");
 	}
 	
 	
@@ -58,7 +58,7 @@
 		if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
 			?>
 			<div class="maincontent">
-				<p><a href="index.php?page=admin">Back to admin</a></p>
+				<p><a href="index.blade.php?page=admin">Back to admin</a></p>
 				<h1>Confirm Question Details</h1>
 				<p>Question: <?php echo $_SESSION['addQuestionStock']['name']; ?></p>
 				<p>Add an Image: <img src="images/<?php echo $_SESSION['addQuestionStock']['thumbnail']; ?>" /></p>
@@ -88,7 +88,7 @@
 		$_SESSION['addQuestionStock']['thumbnail']="noimage.jpg";
 		?>
 		<div class="maincontent">
-				<p><a href="index.php?page=admin">Back to admin</a></p>
+				<p><a href="index.blade.php?page=admin">Back to admin</a></p>
 				<h1>Confirm Question Information</h1>
 				<p>Question: <?php echo $_SESSION['addQuestionStock']['name']; ?></p>
 				<p>Thumbnail: <img src="images/<?php echo $_SESSION['addQuestionStock']['thumbnail']; ?>" /></p>
@@ -110,4 +110,4 @@
 		<?php
 	}
 ?>
-<p><a href="index.php?page=addQuestionStock">Go back</a> - <a href="index.php?page=enterstock">Confirm</a></p>
+<p><a href="index.blade.php?page=addQuestionStock">Go back</a> - <a href="index.blade.php?page=enterstock">Confirm</a></p>

@@ -1,3 +1,4 @@
+
 <!doctype html>
 
 <html lang="{{ app()->getLocale() }}">
@@ -68,7 +69,7 @@
 <body>
 
 	<div class="header">
-		<h2>Student Login</h2>
+		<h2>Login</h2>
 	</div>
 	
 	<form action="index.blade.php?page=admin" method="post">
@@ -83,7 +84,7 @@
 	<p><input type="submit" name="login" /></p>
 </form>
 		<p>
-			Not yet a Student? <a href="student.blade.php">Sign up</a>
+			Not Registered? <a href="login.blade.php">Sign up</a>
 		</p>
 		 <p>
 			Go to Welcome Page <a href="welcome.blade.php">Home</a>

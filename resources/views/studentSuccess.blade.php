@@ -1,6 +1,6 @@
 <?php
 if(!isset($_REQUEST['id'])){
-    header("Location: index1.blade.php");
+    header("Location: index.blade.php");
 }
 ?>
 <!DOCTYPE html>

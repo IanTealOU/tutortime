@@ -20,7 +20,7 @@
 
     <!-- Header -->
     <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px">
-      <h1>Welcome, <strong><?php echo $_SESSION['name']; ?></strong></h1>
+      <h1>Welcome, <strong><?php echo $_SESSION['username']; ?></strong></h1>
 
         <div class="w3-padding-32">
             <div class="w3-bar w3-border">
@@ -48,7 +48,7 @@
         <?php endif ?>
 
         <!-- logged in teacher information -->
-        <?php  if (isset($_SESSION['name'])) : ?>
+        <?php  if (isset($_SESSION['username'])) : ?>
             
         <?php endif ?>
 

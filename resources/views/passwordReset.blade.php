@@ -1,4 +1,4 @@
-<?php include('teacherServer.blade.php') ?>
+<?php include('dbconnect.blade.php') ?>
 <!DOCTYPE html>
 <html>
 <meta charset="UTF-8">
@@ -80,9 +80,13 @@
     <h2>Change Password</h2>
 </div>
 
-<form method="post" action="welcome.blade.php">
+<form method="post" action="admin.blade.php">
 
    <!--<?php include('errors.blade.php'); ?> -->
+   <div class="input-group">
+        <label>Student's Name:</label>
+        <input type="password" name="password" >
+    </div>
 
     <div class="input-group">
         <label>Old Password:</label>
@@ -97,7 +101,7 @@
         <input type="password" name="password">
     </div>
     <div class="input-group">
-        <button type="submit" class="btn" name="login_user">Save</button>
+        <button type="submit" class="btn" name="login">Save</button>
     </div>
 </form>
 

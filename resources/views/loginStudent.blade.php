@@ -1,4 +1,3 @@
-<?php include("dbconnect.blade.php");?>
 <!doctype html>
 
 <html lang="{{ app()->getLocale() }}">
@@ -67,39 +66,18 @@
         </style>
 </head>
 <body>
-	<div class="content">
-		<p>Welcome Back,  <h3></h3>
-            <?php if(!empty($_SESSION)) {echo $_SESSION['username']; }?>
-        </h3></p>
-	</div>
-	<div class="content">
 
-		<!-- notification message -->
-	<?php
-//This file is the base for all pages in the site. When creating a new page, we just open this one, then save a copy as the new page.
-	
-	if(isset($_GET['logout'])) {
-		unset($_SESSION['admin']);
-	}
-	
-	if(isset($_POST['login'])) {
-		$login_sql="SELECT * FROM user WHERE username='".$_POST['username']."' AND password='".($_POST['password'])."'";
-		$login_query=mysqli_query($dbconnect, $login_sql);
-		if(mysqli_num_rows($login_query)>0) {
-			$login_rs=mysqli_fetch_assoc($login_query);
-			$_SESSION['admin']=$login_rs['userid'];
-		} else {
-			header("Location:index.blade.php?page=admin&error=login");
-		}
-	}
-?>
-      <?php if(!isset($_SESSION['admin'])) {
-		include("login.blade.php");
-		} else {
-		include("adminpanel.blade.php");
-		}
-		?>
-	</div>
-		
+<form action="index.blade.php?page=student" method="post">
+    <p>Username:<input name="studusername" /></p>
+    <p>Password:<input name="studpassword" type="password" /></p>
+    <?php
+    if(isset($_GET['error'])) {
+        echo "Dear Customer-Incorrect username or password";
+    }
+    
+    ?>
+    <p><input type="submit" name="loginstud" /></p>
+</form>
+
 </body>
 </html>

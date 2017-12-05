@@ -26,52 +26,19 @@
 
     <!-- Header -->
     <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px"></header>
-    <h1>Welcome <?php echo $_SESSION['name']; ?></h1>
+  
 </div>
 
-<form method="post" action="questionLogin.blade.php">
+<form method="post" action="addQuestionStock.blade.php">
 
     
-        <div class="input-group">
-            <label> Enter your course name</label>
-            <input type="text" name="course_name" value="<?php echo $course_name; ?>">
-        </div>
-
-        
-            <div class="input-group">
-            <label> Enter Your Question?</label>
-            <input type="text" name="questions" value="<?php echo $questions; ?>">
-        </div>
-
-        
-            <div class="input-group">
-            <label> Enter the Answer to the Question?</label>
-            <input type="text" name="answer" value="<?php echo $answer; ?>">
-        </div>
-        
-            <div class="input-group">
-            <label> Is this the Correct Answer? Yes=1</label>
-            <input type="text" name="correct" value="<?php echo $correct; ?>">
-        </div>
-
-        <div class="input-group">
-            <button type="submit" class="btn" name="reg_login">Submit</button>
-
-        </div>
-
-        <a href="teacherLanding.blade.php" class="w3-bar-item w3-button">Account</a>
-
-        <a href="welcome.blade.php" class="w3-bar-item w3-button">TutorTime Home</a>
-
-        <a href="indexQuiz.blade.php?logout='1'" class="w3-bar-item w3-button">Logout</a>
-    </div>
 </form>
 <!-- notification message -->
 <?php
-    session_start();
+   
     
     if(!isset($_SESSION['admin'])) {
-        header("Location:index.php");
+        header("Location:index.blade.php");
     }
     if(!isset($_SESSION['addQuestionStock'])) {
         $_SESSION['addQuestionStock']['name']="";

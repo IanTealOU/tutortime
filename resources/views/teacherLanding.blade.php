@@ -1,4 +1,4 @@
-<?php include('teacherServer.blade.php') ?>
+<?php include('dbconnect.blade.php') ?>
 
 <!DOCTYPE html>
 <html>
@@ -25,8 +25,8 @@
             <div class="w3-bar w3-border">
                 <a href="teacherClass.blade.php" class="w3-bar-item w3-button">Classroom</a>
                 <a href="passwordReset.blade.php" class="w3-bar-item w3-button">Account</a>
-                <a href="welcome.blade.php" class="w3-bar-item w3-button">TutorTime Home</a>
-                <a href="questionLogin.blade.php" class="w3-bar-item w3-button">Question Login</a>
+                <a href="home.blade.php" class="w3-bar-item w3-button">TutorTime Home</a>
+                <a href=".blade.php" class="w3-bar-item w3-button">Question Login</a>
                 <a href="indexTeacher.blade.php?logout='1'" class="w3-bar-item w3-button">Logout</a>
                
             </div>
@@ -48,7 +48,7 @@
         <?php endif ?>
 
         <!-- logged in teacher information -->
-        <?php  if (isset($_SESSION['name'])) : ?>
+        <?php  if (isset($_SESSION['username'])) : ?>
             
         <?php endif ?>
 

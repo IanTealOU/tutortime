@@ -1,9 +1,9 @@
 <?php
 //This file is the base for all pages in the site. When creating a new page, we just open this one, then save a copy as the new page.
-	include("dbconnect.php");
+	include("dbconnect.blade.php");
 	session_start();
 	if(!isset($_SESSION['admin'])) {
-		header("Location:index.php");
+		header("Location:index.blade.php");
 	}
 	
 	
@@ -14,4 +14,4 @@
 ?>
 	<h1>Edit category</h1>
     <p>Category successfully updated</p>
-	<p><a href="index.php?page=admin">Back to admin panel</a></p>
+	<p><a href="index.blade.php?page=admin">Back to admin panel</a></p>

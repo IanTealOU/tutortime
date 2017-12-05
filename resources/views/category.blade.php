@@ -1,6 +1,6 @@
 <?php
 //This file is the base for all pages in the site. When creating a new page, we just open this one, then save a copy as the new page.
-	include("dbconnect.php");
+	include("dbconnect.blade.php");
 	if(!isset($_GET['categoryID'])) {
 		header("Location:index.blade.php");
 	}

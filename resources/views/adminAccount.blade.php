@@ -70,7 +70,7 @@
     <h2>Change Password</h2>
 </div>
 
-<form method="post" action="login.blade.php">
+<form method="post" action="index.blade.php">
 
   <!--  <?php include('errors.blade.php'); ?> -->
 
@@ -87,7 +87,7 @@
         <input type="password" name="password">
     </div>
     <div class="input-group">
-        <button type="submit" class="btn" name="login_user">Save</button>
+        <button type="submit" class="btn" name="login">Save</button>
     </div>
 </form>
 
