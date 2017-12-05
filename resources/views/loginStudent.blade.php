@@ -67,7 +67,7 @@
 </head>
 <body>
 
-<form action="index.blade.php?page=student" method="post">
+<form action="index.blade.php?page=students" method="post">
     <p>Username:<input name="studusername" /></p>
     <p>Password:<input name="studpassword" type="password" /></p>
     <?php

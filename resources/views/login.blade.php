@@ -83,11 +83,9 @@
 	?>
 	<p><input type="submit" name="login" /></p>
 </form>
-		<p>
-			Not Registered? <a href="login.blade.php">Sign up</a>
-		</p>
+		
 		 <p>
-			Go to Welcome Page <a href="welcome.blade.php">Home</a>
+			Go to Welcome Page <a href="welcome.blade.php">--></a>
 		</p>
 	</form>
 

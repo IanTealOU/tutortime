@@ -26,7 +26,7 @@
 
     <!-- Header -->
     <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px"></header>
-    <h1>Welcome <?php echo $_SESSION['username']; ?></h1>
+    
 </div>
 
 <form method="post" action="addQuestion.blade.php">
