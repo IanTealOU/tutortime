@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
 <title>item</title>
+=======
+<title>W3.CSS Template</title>
+>>>>>>> tutorPractice
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -17,11 +21,22 @@
 <div class="w3-content" style="max-width:1500px">
 
     <!-- Header -->
+<<<<<<< HEAD
     <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px"> 
+=======
+    <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px"> <h1>Welcome <strong><?php echo $_SESSION['name']; ?></strong></h1>
+>>>>>>> tutorPractice
 
 	<div class="content">
 
 		<!-- notification message -->
+<<<<<<< HEAD
+=======
+	<?php
+//This file is the base for all pages in the site. When creating a new page, we just open this one, then save a copy as the new page.
+	include("dbconnect.blade.php");
+?>
+>>>>>>> tutorPractice
 <html>
 <head>
 <title>TutorTime</title>
@@ -38,13 +53,21 @@
 	$stock_query=mysqli_query($dbconnect, $stock_sql);
 	$stock_rs=mysqli_fetch_assoc($stock_query);
 ?>
+<<<<<<< HEAD
 	<p><img src="resources/views/logo.jpg<?php echo $stock_rs['bigphoto']; ?>" /></p>
+=======
+	<p><img src="images/<?php echo $stock_rs['bigphoto']; ?>" /></p>
+>>>>>>> tutorPractice
       <p><?php echo $stock_rs['name']; ?></p>
 	  <p><?php echo $stock_rs['catname']; ?></p>
 	  
 	  <p>Question: <?php echo $stock_rs['question']; ?></p>
 	  <p>Answer: <?php echo $stock_rs['answer']; ?></p>
+<<<<<<< HEAD
 	<p> <a class="btn btn-success" href="questionAction.blade.php?action=addToCart&id=<?php echo $stock_rs["id"]; ?>">Add to classes</a><p>
+=======
+	<p> <a class="btn btn-success" href="questionAction.blade.php?action=addToCart&id=<?php echo $stock_rs["id"]; ?>">Add to class</a><p>
+>>>>>>> tutorPractice
 	</div>
 		
 </body>

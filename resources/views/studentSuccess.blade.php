@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php include('dbconnect.blade.php') ?>
 
 <!DOCTYPE html>
@@ -17,6 +18,11 @@
 <?php
 if(!isset($_REQUEST['id'])){
     header("Location: index.blade.php");
+=======
+<?php
+if(!isset($_REQUEST['id'])){
+    header("Location: index1.blade.php");
+>>>>>>> tutorPractice
 }
 ?>
 <!DOCTYPE html>
