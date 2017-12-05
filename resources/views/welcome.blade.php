@@ -71,11 +71,7 @@
                 <div class="top-right links">
                     
                         <a href="login.blade.php">Login</a>
-<<<<<<< HEAD
                         <a href="loginStudent.blade.php">Student Register</a>                        						
-=======
-                        						
->>>>>>> cab55054412b6b92b5282f2fa804a26b21eb933b
                     
                 </div>
             

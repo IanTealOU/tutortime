@@ -1,10 +1,6 @@
  <!DOCTYPE html>
 <html>
-<<<<<<< HEAD
 <title>Add Category</title>
-=======
-<title>questionLogin</title>
->>>>>>> cab55054412b6b92b5282f2fa804a26b21eb933b
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -22,7 +18,6 @@
     .w3-row-padding img {
         margin-bottom: 12px
     }
-<<<<<<< HEAD
     .content {
                 text-align: center;
             }
@@ -36,9 +31,6 @@
 
         </div>
 </header>
-=======
-</style>
->>>>>>> cab55054412b6b92b5282f2fa804a26b21eb933b
 <body>
 
 <!-- !PAGE CONTENT! -->
@@ -66,15 +58,9 @@
         $_SESSION['addQuestion']="";
     }
 ?>
-<<<<<<< HEAD
     <h1>Add a New Category</h1>
       <form action="index.blade.php?page=addQuestionconfirm" method="post">
         <p>Category Name: <input name="name" value="<?php echo $_SESSION['addQuestion']; ?>" /></p>
-=======
-    <h1>Add new category</h1>
-      <form action="index.blade.php?page=addQuestionconfirm" method="post">
-        <p>Name: <input name="name" value="<?php echo $_SESSION['addQuestion']; ?>" /></p>
->>>>>>> cab55054412b6b92b5282f2fa804a26b21eb933b
         <p><input type="submit" /></p>
       </form>
 

@@ -6,11 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<<<<<<< HEAD
         
-=======
-        <title>TutorTime</title>
->>>>>>> cab55054412b6b92b5282f2fa804a26b21eb933b
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -97,19 +93,11 @@
 
 
                             </p>
-<<<<<<< HEAD
                     <a href="https://www.oakland.edu/"class="w3-bar-item w3-button">AboutUs</a>
                     <a href="https://www.merriam-webster.com/dictionary/dictionary"class="w3-bar-item w3-button">Dictionary</a>
                     <a href="http://www.edweek.org/tm/index.html"class="w3-bar-item w3-button">TeacherNews</a>
                     <a href="https://www.britannica.com/class="w3-bar-item w3-button"">Encyclopedia</a>
                     <a href="https://www.oakland.edu/"class="w3-bar-item w3-button">ContactUs</a>
-=======
-                    <a href="https://www.oakland.edu/">AboutUs</a>
-                    <a href="https://www.merriam-webster.com/dictionary/dictionary">Dictionary</a>
-                    <a href="http://www.edweek.org/tm/index.html">TeacherNews</a>
-                    <a href="https://www.britannica.com/">Encyclopedia</a>
-                    <a href="https://www.oakland.edu/">ContactUs</a>
->>>>>>> cab55054412b6b92b5282f2fa804a26b21eb933b
                 </div>
             </div>
         </div>

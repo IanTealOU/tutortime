@@ -1,17 +1,10 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
-=======
- <!DOCTYPE html>
-<html>
-<title>questionLogin</title>
->>>>>>> cab55054412b6b92b5282f2fa804a26b21eb933b
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<<<<<<< HEAD
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -71,21 +64,6 @@
 
         </div>
 </header>
-=======
-<style>
-    body, h1 {
-        font-family: "Raleway", Arial, sans-serif
-    }
-
-    h1 {
-        letter-spacing: 6px
-    }
-
-    .w3-row-padding img {
-        margin-bottom: 12px
-    }
-</style>
->>>>>>> cab55054412b6b92b5282f2fa804a26b21eb933b
 <body>
 
 <!-- !PAGE CONTENT! -->
@@ -96,11 +74,7 @@
     
 </div>
 
-<<<<<<< HEAD
 <form method="post" action="deletecategoryselect.blade.php">
-=======
-<form method="post" action="addQuestion.blade.php">
->>>>>>> cab55054412b6b92b5282f2fa804a26b21eb933b
 
     
     
@@ -113,7 +87,6 @@
 		header("Location:index.blade.php");
 	}
 ?>
-<<<<<<< HEAD
 	<h1>Choose the Question to Delete</h1>
       <?php $delcat_sql="SELECT * FROM stock";
 			$delcat_query=mysqli_query($dbconnect, $delcat_sql);
@@ -125,15 +98,3 @@
 			} while ($delcat_rs=mysqli_fetch_assoc($delcat_query));
 			?>
 			<a href="index.blade.php?page=admin&logout=true" class="w3-bar-item w3-button">Logout</a>
-=======
-	<h1>Delete category</h1>
-      <?php $delcat_sql="SELECT * FROM category";
-			$delcat_query=mysqli_query($dbconnect, $delcat_sql);
-			$delcat_rs=mysqli_fetch_assoc($delcat_query);
-			do { ?>
-			<p><a href="index.blade.php?page=deletecategoryconfirm&categoryID=<?php echo $delcat_rs['categoryID']; ?>"><?php echo $delcat_rs['name']; ?></a></p>
-			
-			<?php
-			} while ($delcat_rs=mysqli_fetch_assoc($delcat_query));
-			?>
->>>>>>> cab55054412b6b92b5282f2fa804a26b21eb933b

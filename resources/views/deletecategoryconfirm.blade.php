@@ -18,12 +18,9 @@
     .w3-row-padding img {
         margin-bottom: 12px
     }
-<<<<<<< HEAD
     .content {
                 text-align: center;
             }
-=======
->>>>>>> cab55054412b6b92b5282f2fa804a26b21eb933b
 </style>
 <body>
 
@@ -62,8 +59,4 @@
 				echo "Warning! There are ".$count." stock item(s) in this category. If you delete the category they will also be removed from the database";
 			} ?></p>
 			<p><?php echo "Do you really want to delete ".$delcat_rs['name']."?"; ?></p>
-<<<<<<< HEAD
 			<p><a href="index.blade.php?page=deletecategory&categoryID=<?php echo $_GET['categoryID']; ?>"class="w3-bar-item w3-button">Yes, delete it!</a> | <a href="index.blade.php?page=deletecategoryselect"class="w3-bar-item w3-button">No, go back</a> | <a href="index.blade.php?page=admin"class="w3-bar-item w3-button">Back to Teacher Panel</a></p>
-=======
-			<p><a href="index.blade.php?page=deletecategory&categoryID=<?php echo $_GET['categoryID']; ?>">Yes, delete it!</a> | <a href="index.blade.php?page=deletecategoryselect">No, go back</a> | <a href="index.blade.php?page=admin">Back to admin panel</a></p>
->>>>>>> cab55054412b6b92b5282f2fa804a26b21eb933b

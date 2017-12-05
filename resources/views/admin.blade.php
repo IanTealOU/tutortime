@@ -1,14 +1,7 @@
-<<<<<<< HEAD
 <?include("dbconnect.blade.php");?>
  <!DOCTYPE html>
 <html>
 <title>Admin</title>
-=======
-<?php include("dbconnect.blade.php");?>
- <!DOCTYPE html>
-<html>
-<title>questionLogin</title>
->>>>>>> cab55054412b6b92b5282f2fa804a26b21eb933b
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -26,7 +19,6 @@
     .w3-row-padding img {
         margin-bottom: 12px
     }
-<<<<<<< HEAD
     .flex-center {
                 align-items: center;
                 display: flex;
@@ -35,8 +27,6 @@
     .content {
                 text-align: center;
             }
-=======
->>>>>>> cab55054412b6b92b5282f2fa804a26b21eb933b
 </style>
 <body>
 
@@ -48,25 +38,12 @@
     
 </div>
 
-<<<<<<< HEAD
    
-=======
-<form method="post" action="addQuestion.blade.php">
-
-    
->>>>>>> cab55054412b6b92b5282f2fa804a26b21eb933b
     
 </form>
 </head>
 <body>
-<<<<<<< HEAD
 	
-=======
-	<div class="content">
-		<p>Welcome Back,  <h3></h3>
-            <?php if(!empty($_SESSION)) {echo $_SESSION['username']; }?>
-        </h3></p>
->>>>>>> cab55054412b6b92b5282f2fa804a26b21eb933b
 	</div>
 	<div class="content">
 
@@ -74,10 +51,7 @@
 	<?php
 //This file is the base for all pages in the site. When creating a new page, we just open this one, then save a copy as the new page.
 	
-<<<<<<< HEAD
     session_start();
-=======
->>>>>>> cab55054412b6b92b5282f2fa804a26b21eb933b
 	if(isset($_GET['logout'])) {
 		unset($_SESSION['admin']);
 	}

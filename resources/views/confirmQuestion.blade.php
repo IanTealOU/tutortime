@@ -1,10 +1,6 @@
  <!DOCTYPE html>
 <html>
-<<<<<<< HEAD
 <title>Confirm Question</title>
-=======
-<title>questionLogin</title>
->>>>>>> cab55054412b6b92b5282f2fa804a26b21eb933b
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -22,12 +18,9 @@
     .w3-row-padding img {
         margin-bottom: 12px
     }
-<<<<<<< HEAD
     .content {
                 text-align: center;
             }
-=======
->>>>>>> cab55054412b6b92b5282f2fa804a26b21eb933b
 </style>
 <body>
 

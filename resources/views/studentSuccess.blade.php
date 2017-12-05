@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php include('dbconnect.blade.php') ?>
 
 <!DOCTYPE html>
@@ -15,8 +14,6 @@
     .w3-row-padding img {margin-bottom: 12px}
 </style>
 <body>
-=======
->>>>>>> cab55054412b6b92b5282f2fa804a26b21eb933b
 <?php
 if(!isset($_REQUEST['id'])){
     header("Location: index.blade.php");

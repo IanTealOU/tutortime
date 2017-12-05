@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <title>TutortTime</title>
@@ -22,8 +21,6 @@
             }
 </style>
 <body>
-=======
->>>>>>> cab55054412b6b92b5282f2fa804a26b21eb933b
 <?php
 //This file is the base for all pages in the site. When creating a new page, we just open this one, then save a copy as the new page.
 	include("dbconnect.blade.php");
