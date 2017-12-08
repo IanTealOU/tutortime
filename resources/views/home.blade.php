@@ -1,126 +1,124 @@
 <!doctype html>
 
 <html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<<<<<<< HEAD
-        
-=======
-        <title>TutorTime</title>
->>>>>>> tutorPractice
+    <<<<<<< HEAD
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+    =======
+    <title>TutorTime</title>
+    >>>>>>> tutorPractice
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #9900cc;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
-            .full-height {
-                height: 100vh;
-            }
+    <!-- Styles -->
+    <style>
+        html, body {
+            background-color: #fff;
+            color: #9900cc;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 100;
+            height: 100vh;
+            margin: 0;
+        }
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
+        .full-height {
+            height: 100vh;
+        }
 
-            .position-ref {
-                position: relative;
-            }
+        .flex-center {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
+        .position-ref {
+            position: relative;
+        }
 
-            .content {
-                text-align: center;
-            }
+        .top-right {
+            position: absolute;
+            right: 10px;
+            top: 18px;
+        }
 
-            .title {
-                font-size: 84px;
-            }
+        .content {
+            text-align: center;
+        }
 
-            .links > a {
-                color: #9900cc;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
+        .title {
+            font-size: 84px;
+        }
 
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            
-                <div class="top-right links">
-                    
+        .links > a {
+            color: #9900cc;
+            padding: 0 25px;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: .1rem;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
 
+        .m-b-md {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+<div class="flex-center position-ref full-height">
 
-<<<<<<< HEAD
-                        <a href="welcome.blade.php">Login</a>
-                        					
-=======
-                        <a href="teacherLogin.blade.php">Teacher Login</a>
-                        <a href="studentLogin.blade.php">Student Login</a>
-                        <a href="adminLogin.blade.php">Admin Login</a>
-                        <a href="registerAdmin.blade.php">Admin Register</a>
-						<a href="registerTeacher.blade.php">Teacher Register</a>
-						<a href="registerStudent.blade.php">Student Register</a>						
->>>>>>> tutorPractice
-                    
-                </div>
-            
-
-            <div class="content">
-                <div class="title m-b-md">
-                    TutorTime
-                </div>
-
-                <div class="links">
-                    <h1>Welcome to TutorTime</h1>
-                    <p>
-                        Company Information:
-
-                        :) :) :) :) :) :) :) :) :) :) :) :) :) :) 
+    <div class="top-right links">
 
 
+        <<<<<<< HEAD
+        <a href="welcome.blade.php">Login</a>
 
-                            </p>
-<<<<<<< HEAD
-                    <a href="https://www.oakland.edu/"class="w3-bar-item w3-button">AboutUs</a>
-                    <a href="https://www.merriam-webster.com/dictionary/dictionary"class="w3-bar-item w3-button">Dictionary</a>
-                    <a href="http://www.edweek.org/tm/index.html"class="w3-bar-item w3-button">TeacherNews</a>
-                    <a href="https://www.britannica.com/class="w3-bar-item w3-button"">Encyclopedia</a>
-                    <a href="https://www.oakland.edu/"class="w3-bar-item w3-button">ContactUs</a>
-=======
-                    <a href="https://www.oakland.edu/">AboutUs</a>
-                    <a href="https://www.merriam-webster.com/dictionary/dictionary">Dictionary</a>
-                    <a href="http://www.edweek.org/tm/index.html">TeacherNews</a>
-                    <a href="https://www.britannica.com/">Encyclopedia</a>
-                    <a href="https://www.oakland.edu/">ContactUs</a>
->>>>>>> tutorPractice
-                </div>
-            </div>
+        =======
+        <a href="teacherLogin.blade.php">Teacher Login</a>
+        <a href="studentLogin.blade.php">Student Login</a>
+        <a href="adminLogin.blade.php">Admin Login</a>
+        <a href="registerAdmin.blade.php">Admin Register</a>
+        <a href="registerTeacher.blade.php">Teacher Register</a>
+        <a href="registerStudent.blade.php">Student Register</a>
+        >>>>>>> tutorPractice
+
+    </div>
+
+
+    <div class="content">
+        <div class="title m-b-md">
+            TutorTime
         </div>
-    </body>
+
+        <div class="links">
+            <h1>Welcome to TutorTime</h1>
+            <p>
+                Company Information:
+
+                :) :) :) :) :) :) :) :) :) :) :) :) :) :)
+
+
+            </p>
+            <<<<<<< HEAD
+            <a href="https://www.oakland.edu/" class="w3-bar-item w3-button">AboutUs</a>
+            <a href="https://www.merriam-webster.com/dictionary/dictionary" class="w3-bar-item w3-button">Dictionary</a>
+            <a href="http://www.edweek.org/tm/index.html" class="w3-bar-item w3-button">TeacherNews</a>
+            <a href="https://www.britannica." class="w3-bar-item w3-button">Encyclopedia</a>
+            <a href="https://www.oakland.edu/" class="w3-bar-item w3-button">ContactUs</a>
+            =======
+            <a href="https://www.oakland.edu/">AboutUs</a>
+            <a href="https://www.merriam-webster.com/dictionary/dictionary">Dictionary</a>
+            <a href="http://www.edweek.org/tm/index.html">TeacherNews</a>
+            <a href="https://www.britannica.com/">Encyclopedia</a>
+            <a href="https://www.oakland.edu/">ContactUs</a>
+            >>>>>>> tutorPractice
+        </div>
+    </div>
+</div>
+</body>
 </html>

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <title>questionLogin</title>
@@ -19,9 +18,7 @@
     .w3-row-padding img {
         margin-bottom: 12px
     }
-    .content {
-                text-align: center;
-            }
+
 </style>
 <body>
 
@@ -30,35 +27,35 @@
 
     <!-- Header -->
     <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px"></header>
-    
+
 </div>
 
 <form method="post" action="addQuestion.blade.php">
 
-    
-    
+
 </form>
 <?php
 //This file is the base for all pages in the site. When creating a new page, we just open this one, then save a copy as the new page.
-	include("dbconnect.blade.php");
-	session_start();
-	if(!isset($_SESSION['admin'])) {
-		header("Location:index.blade.php");
-=======
-<?php
+include("dbconnect.blade.php");
+session_start();
+if(!isset($_SESSION['admin'])) {
+header("Location:index.blade.php");
+
 //This file is the base for all pages in the site. When creating a new page, we just open this one, then save a copy as the new page.
-	include("dbconnect.php");
-	session_start();
-	if(!isset($_SESSION['admin'])) {
-		header("Location:index.php");
->>>>>>> tutorPractice
-	}
-	$_SESSION['addQuestion']=$_POST['name'];
+include("dbconnect.blade.php");
+session_start();
+if (!isset($_SESSION['admin'])) {
+    header("Location:index.php");
+
+}
+$_SESSION['addQuestion'] = $_POST['name'];
 ?>
-	<h1>Add new category</h1>
-      <p>You entered: <?php echo $_SESSION['addQuestion']; ?></p>
-<<<<<<< HEAD
-	  <p><a href="index.blade.php?page=addQuestioninsert">Confirm</a> | <a href="index.blade.php?page=addQuestion&update=true">Go back</a> | <a href="index.blade.php?page=admin">Back to admin panel</a></p>
-=======
-	  <p><a href="index.php?page=addQuestioninsert">Confirm</a> | <a href="index.php?page=addQuestion&update=true">Go back</a> | <a href="index.php?page=admin">Back to admin panel</a></p>
->>>>>>> tutorPractice
+<h1>Add new category</h1>
+<p>You entered: <?php echo $_SESSION['addQuestion']; ?> </p>
+
+<p><a href="index.blade.php?page=addQuestioninsert">Confirm</a> | <a
+            href="index.blade.php?page=addQuestion&update=true">Go back</a> | <a href="index.blade.php?page=admin">Back
+        to admin panel</a></p>
+<p><a href="index.php?page=addQuestioninsert">Confirm</a> | <a href="index.php?page=addQuestion&update=true">Go back</a>
+    | <a href="index.php?page=admin">Back to admin panel</a></p>
+

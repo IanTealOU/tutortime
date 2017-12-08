@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <?php include('dbconnect.blade.php') ?>
 
 <!DOCTYPE html>
@@ -10,19 +10,26 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-    body,h1 {font-family: "Raleway", Arial, sans-serif}
-    h1 {letter-spacing: 6px}
-    .w3-row-padding img {margin-bottom: 12px}
+    body, h1 {
+        font-family: "Raleway", Arial, sans-serif
+    }
+
+    h1 {
+        letter-spacing: 6px
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
 </style>
 <body>
 <?php
 if(!isset($_REQUEST['id'])){
     header("Location: index.blade.php");
-=======
-<?php
+
 if(!isset($_REQUEST['id'])){
     header("Location: index1.blade.php");
->>>>>>> tutorPractice
+
 }
 ?>
 <!DOCTYPE html>
@@ -31,8 +38,15 @@ if(!isset($_REQUEST['id'])){
     <title>Your Questions were Successfully Submitted</title>
     <meta charset="utf-8">
     <style>
-    .container{width: 100%;padding: 50px;}
-    p{color: #34a853;font-size: 18px;}
+        .container {
+            width: 100%;
+            padding: 50px;
+        }
+
+        p {
+            color: #34a853;
+            font-size: 18px;
+        }
     </style>
 </head>
 </head>

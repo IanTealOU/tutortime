@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <!DOCTYPE html>
 <html>
 <title>questionLogin</title>
@@ -21,7 +21,7 @@
     }
 </style>
 <header>
-    <div class="flex-center position-ref full-height">
+    <div class="flex-center position-ref full-height"></div>
 
         <div class="top-right links">
 
@@ -51,20 +51,18 @@
 	session_start();
 	if(!isset($_SESSION['admin'])) {
 		header("Location:index.blade.php");
-=======
-<?php
+
 //This file is the base for all pages in the site. When creating a new page, we just open this one, then save a copy as the new page.
-	include("dbconnect.php");
+	include("dbconnect.blade.php");
 	session_start();
 	if(!isset($_SESSION['admin'])) {
 		header("Location:index.php");
->>>>>>> tutorPractice
+
 	}
 	$newcat_sql="INSERT INTO category (name) VALUES ('".$_SESSION['addQuestion']."')";
 	$newcat_query=mysqli_query($dbconnect, $newcat_sql);
 	unset($_SESSION['addQuestion']);
 ?>
-<<<<<<< HEAD
 	<h1>New Added Category</h1>
       <p>New Category Entered</p>
 	  <p><a href="index.blade.php?page=admin">Back to admin panel</a></p>
@@ -74,8 +72,8 @@
 </footer>
 </body>
 </html>
-=======
+
 	<h1>Add new category</h1>
       <p>New category entered</p>
 	  <p><a href="index.php?page=admin">Back to admin panel</a></p>
->>>>>>> tutorPractice
+

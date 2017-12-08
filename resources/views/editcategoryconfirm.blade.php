@@ -1,5 +1,5 @@
-<<<<<<< HEAD
- <!DOCTYPE html>
+
+<!DOCTYPE html>
 <html>
 <title>questionLogin</title>
 <meta charset="UTF-8">
@@ -27,35 +27,34 @@
 
     <!-- Header -->
     <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px"></header>
-    
+
 </div>
 
 <form method="post" action="addQuestion.blade.php">
 
-    
-    
+
 </form>
 <?php
 //This file is the base for all pages in the site. When creating a new page, we just open this one, then save a copy as the new page.
-	include("dbconnect.blade.php");
-	session_start();
-	if(!isset($_SESSION['admin'])) {
-		header("Location:index.blade.php");
-=======
-<?php
+include("dbconnect.blade.php");
+session_start();
+if(!isset($_SESSION['admin'])) {
+header("Location:index.blade.php");
+
 //This file is the base for all pages in the site. When creating a new page, we just open this one, then save a copy as the new page.
-	include("dbconnect.php");
-	session_start();
-	if(!isset($_SESSION['admin'])) {
-		header("Location:index.php");
->>>>>>> tutorPractice
-	}
-	$_SESSION['editcategory']['name']=$_POST['name'];
+include("dbconnect.php");
+session_start();
+if (!isset($_SESSION['admin'])) {
+    header("Location:index.php");
+}
+$_SESSION['editcategory']['name'] = $_POST['name'];
 ?>
-	<h1>Edit category</h1>
-    <p>Updated category name: <?php echo $_SESSION['editcategory']['name']; ?></p>
+<h1>Edit category</h1>
+<p>Updated category name: <?php echo $_SESSION['editcategory']['name']; ?></p>
 <<<<<<< HEAD
-	<p><a href="index.blade.php?page=editcategoryupdate">Confirm</a> | <a href="index.blade.php?page=editcategory">Oops, go back</a> | <a href="index.blade.php?page=admin">Back to Your Teacher Page</a></p>
+<p><a href="index.blade.php?page=editcategoryupdate">Confirm</a> | <a href="index.blade.php?page=editcategory">Oops, go
+        back</a> | <a href="index.blade.php?page=admin">Back to Your Teacher Page</a></p>
 =======
-	<p><a href="index.php?page=editcategoryupdate">Confirm</a> | <a href="index.php?page=editcategory">Oops, go back</a> | <a href="index.php?page=admin">Back to admin panel</a></p>
+<p><a href="index.php?page=editcategoryupdate">Confirm</a> | <a href="index.php?page=editcategory">Oops, go back</a> |
+    <a href="index.php?page=admin">Back to admin panel</a></p>
 >>>>>>> tutorPractice

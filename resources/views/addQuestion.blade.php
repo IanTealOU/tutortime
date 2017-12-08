@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <title>Add Category</title>
 <meta charset="UTF-8">
@@ -18,18 +18,16 @@
     .w3-row-padding img {
         margin-bottom: 12px
     }
-    .content {
-                text-align: center;
-            }
+
 </style>
 <header>
-    <div class="flex-center position-ref full-height">
+    <div class="flex-center position-ref full-height"></div>
 
-        <div class="top-right links">
+    <div class="top-right links">
 
-            <a href="adminLanding.blade.php"class="w3-bar-item w3-button">Home</a>
+        <a href="adminLanding.blade.php" class="w3-bar-item w3-button">Home</a>
 
-        </div>
+    </div>
 </header>
 <body>
 
@@ -38,35 +36,30 @@
 
     <!-- Header -->
     <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px"></header>
-    
+
 </div>
 
 <form method="post" action="addQuestion.blade.php">
 
-    
-    
+
 </form>
 <!-- notification message -->
 <?php
 //This file is the base for all pages in the site. When creating a new page, we just open this one, then save a copy as the new page.
-    include("dbconnect.blade.php");
-    session_start();
-    if(!isset($_SESSION['admin'])) {
-        header("Location:index.blade.php");
-    }
-    if(!isset($_GET['update'])) {
-        $_SESSION['addQuestion']="";
-    }
+include("dbconnect.blade.php");
+session_start();
+if (!isset($_SESSION['admin'])) {
+    header("Location:index.blade.php");
+}
+if (!isset($_GET['update'])) {
+    $_SESSION['addQuestion'] = "";
+}
 ?>
-    <h1>Add a New Category</h1>
-      <form action="index.blade.php?page=addQuestionconfirm" method="post">
-        <p>Category Name: <input name="name" value="<?php echo $_SESSION['addQuestion']; ?>" /></p>
-        <p><input type="submit" /></p>
-      </form>
-
-
-
-
+<h1>Add a New Category</h1>
+<form action="index.blade.php?page=addQuestionconfirm" method="post">
+    <p>Category Name: <input name="name" value="<?php echo $_SESSION['addQuestion']; ?>"/></p>
+    <p><input type="submit"/></p>
+</form>
 
 
 <!-- Footer -->
