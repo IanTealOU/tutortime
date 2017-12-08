@@ -1,4 +1,3 @@
-<<<<<<< HEAD
  <!DOCTYPE html>
 <html>
 <title>questionLogin</title>
@@ -41,14 +40,6 @@
 	session_start();
 	if(!isset($_SESSION['admin'])) {
 		header("Location:index.blade.php");
-=======
-<?php
-//This file is the base for all pages in the site. When creating a new page, we just open this one, then save a copy as the new page.
-	include("dbconnect.php");
-	session_start();
-	if(!isset($_SESSION['admin'])) {
-		header("Location:index.php");
->>>>>>> tutorPractice
 	}
 	if(isset($_GET['categoryID'])) {
 		$_SESSION['editcategory']['categoryID']=$_GET['categoryID'];
@@ -61,11 +52,7 @@
 	}
 ?>
 	<h1>Edit category</h1>
-<<<<<<< HEAD
     <form action="index.blade.php?page=editcategoryconfirm" method="post">
-=======
-    <form action="index.php?page=editcategoryconfirm" method="post">
->>>>>>> tutorPractice
 		<input name="name" value="<?php echo $_SESSION['editcategory']['name']; ?>" />
 		<input type="submit" name="update" value="Update" />
 	</form>

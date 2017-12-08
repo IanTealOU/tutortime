@@ -1,8 +1,8 @@
-<?php include('studentServer.blade.php') ?>
+<?php include('dbconnect.blade.php') ?>
 
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>studentLanding</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -26,7 +26,7 @@
             <div class="w3-bar w3-border">
                 <a href="studentQuiz.blade.php" class="w3-bar-item w3-button">Testing</a>
                 <a href="studentLanding.blade.php" class="w3-bar-item w3-button">Grades</a>
-                <a href="indexStudent.blade.php?logout='1'" class="w3-bar-item w3-button">Logout</a>
+                <a href="index.blade.php?logout='1'" class="w3-bar-item w3-button">Logout</a>
                 <p>
             Go to: <a href="welcome.blade.php">TutorTime</a>
         </p>

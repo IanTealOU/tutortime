@@ -1,4 +1,3 @@
-<<<<<<< HEAD
  <!DOCTYPE html>
 <html>
 <title>questionLogin</title>
@@ -42,11 +41,6 @@
 <?php
 //This file is the base for all pages in the site. When creating a new page, we just open this one, then save a copy as the new page.
 	include("dbconnect.blade.php");
-=======
-<?php
-//This file is the base for all pages in the site. When creating a new page, we just open this one, then save a copy as the new page.
-	include("dbconnect.php");
->>>>>>> tutorPractice
 	if(!isset($_GET['categoryID'])) {
 		header("Location:index.blade.php");
 	}

@@ -1,10 +1,6 @@
  <!DOCTYPE html>
 <html>
-<<<<<<< HEAD
 <title>TeacherQuestionLogin</title>
-=======
-<title>questionLogin</title>
->>>>>>> tutorPractice
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -22,12 +18,9 @@
     .w3-row-padding img {
         margin-bottom: 12px
     }
-<<<<<<< HEAD
     .content {
                 text-align: center;
             }
-=======
->>>>>>> tutorPractice
 </style>
 <body>
 
@@ -36,7 +29,6 @@
 
     <!-- Header -->
     <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px"></header>
-<<<<<<< HEAD
   
 </div>
 
@@ -51,54 +43,6 @@
     
     if(!isset($_SESSION['admin'])) {
         header("Location:index.blade.php");
-=======
-    <h1>Welcome <?php echo $_SESSION['name']; ?></h1>
-</div>
-
-<form method="post" action="questionLogin.blade.php">
-
-    
-        <div class="input-group">
-            <label> Enter your course name</label>
-            <input type="text" name="course_name" value="<?php echo $course_name; ?>">
-        </div>
-
-        
-            <div class="input-group">
-            <label> Enter Your Question?</label>
-            <input type="text" name="questions" value="<?php echo $questions; ?>">
-        </div>
-
-        
-            <div class="input-group">
-            <label> Enter the Answer to the Question?</label>
-            <input type="text" name="answer" value="<?php echo $answer; ?>">
-        </div>
-        
-            <div class="input-group">
-            <label> Is this the Correct Answer? Yes=1</label>
-            <input type="text" name="correct" value="<?php echo $correct; ?>">
-        </div>
-
-        <div class="input-group">
-            <button type="submit" class="btn" name="reg_login">Submit</button>
-
-        </div>
-
-        <a href="teacherLanding.blade.php" class="w3-bar-item w3-button">Account</a>
-
-        <a href="welcome.blade.php" class="w3-bar-item w3-button">TutorTime Home</a>
-
-        <a href="indexQuiz.blade.php?logout='1'" class="w3-bar-item w3-button">Logout</a>
-    </div>
-</form>
-<!-- notification message -->
-<?php
-    session_start();
-    
-    if(!isset($_SESSION['admin'])) {
-        header("Location:index.php");
->>>>>>> tutorPractice
     }
     if(!isset($_SESSION['addQuestionStock'])) {
         $_SESSION['addQuestionStock']['name']="";
@@ -118,11 +62,7 @@
     
 ?>
 <div class="maincontent">
-<<<<<<< HEAD
     <p><a href="adminLanding.blade.php">Back to admin</a></p>
-=======
-    <p><a href="index.blade.php?page=admin">Back to admin</a></p>
->>>>>>> tutorPractice
     <h1>Please enter your Question</h1>
     <form method="post" action="index.blade.php?page=confirmQuestion" enctype="multipart/form-data">
         <p>Question Name: <input type="text" name="name" value="<?php echo $_SESSION['addQuestionStock']['name']; ?>" /></p>

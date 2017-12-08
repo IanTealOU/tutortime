@@ -1,10 +1,6 @@
 <?php
 //This file is the base for all pages in the site. When creating a new page, we just open this one, then save a copy as the new page.
-<<<<<<< HEAD
 	include("dbconnect.blade.php");
-=======
-	include("dbconnect.php");
->>>>>>> tutorPractice
 ?>
 
 <!DOCTYPE html>

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
  <!DOCTYPE html>
 <html>
 <title>questionLogin</title>
@@ -41,14 +40,6 @@
 	session_start();
 	if(!isset($_SESSION['admin'])) {
 		header("Location:index.blade.php");
-=======
-<?php
-//This file is the base for all pages in the site. When creating a new page, we just open this one, then save a copy as the new page.
-	include("dbconnect.php");
-	session_start();
-	if(!isset($_SESSION['admin'])) {
-		header("Location:index.php");
->>>>>>> tutorPractice
 	}
 	unset($_SESSION['editcategory']);
 	
@@ -58,10 +49,6 @@
 ?>
 	<h1>Edit category</h1>
     <?php do { ?>
-<<<<<<< HEAD
 		<p><a href="index.blade.php?page=editcategory&categoryID=<?php echo $editcat_rs['categoryID']; ?>"><?php echo $editcat_rs['name']; ?></a></p>
-=======
-		<p><a href="index.php?page=editcategory&categoryID=<?php echo $editcat_rs['categoryID']; ?>"><?php echo $editcat_rs['name']; ?></a></p>
->>>>>>> tutorPractice
 	<?php
 	} while ($editcat_rs=mysqli_fetch_assoc($editcat_query)) ?>
