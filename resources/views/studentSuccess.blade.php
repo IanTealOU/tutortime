@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <?php include('dbconnect.blade.php') ?>
 
@@ -58,6 +59,8 @@ if(!isset($_REQUEST['id'])){
 </div>
 </body>
 =======
+=======
+>>>>>>> parent of be7af9c... Updated
 <?php include('dbconnect.blade.php') ?>
 
 <!DOCTYPE html>
@@ -96,5 +99,8 @@ if(!isset($_REQUEST['id'])){
     <p>Your questions were submitted successfully. Student ID is #<?php echo $_GET['id']; ?></p>
 </div>
 </body>
+<<<<<<< HEAD
+>>>>>>> parent of be7af9c... Updated
+=======
 >>>>>>> parent of be7af9c... Updated
 </html>

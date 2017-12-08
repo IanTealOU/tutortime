@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <<<<<<< HEAD
@@ -137,6 +138,8 @@ include("dbconnect.blade.php");
 
 
 =======
+=======
+>>>>>>> parent of be7af9c... Updated
 <!DOCTYPE html>
 <html>
 <title>TutortTime</title>
@@ -220,5 +223,9 @@ include("dbconnect.blade.php");
 			</div>
 		
 </body>
+<<<<<<< HEAD
+</html>
+>>>>>>> parent of be7af9c... Updated
+=======
 </html>
 >>>>>>> parent of be7af9c... Updated

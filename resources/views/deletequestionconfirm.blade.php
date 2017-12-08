@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <title>questionLogin</title>
@@ -65,6 +66,8 @@ $count = mysqli_num_rows($check_query);
                                                              class="w3-bar-item w3-button">No, go back</a> | <a
             href="index.blade.php?page=admin" class="w3-bar-item w3-button">Back to Teacher Panel</a></p>
 =======
+=======
+>>>>>>> parent of be7af9c... Updated
  <!DOCTYPE html>
 <html>
 <title>questionLogin</title>
@@ -127,4 +130,7 @@ $count = mysqli_num_rows($check_query);
 			} ?></p>
 			<p><?php echo "Do you really want to delete ".$delcat_rs['name']."?"; ?></p>
 			<p><a href="index.blade.php?page=deletequestion&question=<?php echo $_GET['question']; ?>"class="w3-bar-item w3-button">Yes, delete it!</a> | <a href="index.blade.php?page=deletequestionselect"class="w3-bar-item w3-button">No, go back</a> | <a href="index.blade.php?page=admin"class="w3-bar-item w3-button">Back to Teacher Panel</a></p>
+<<<<<<< HEAD
+>>>>>>> parent of be7af9c... Updated
+=======
 >>>>>>> parent of be7af9c... Updated

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <title>questionLogin</title>
@@ -50,6 +51,8 @@ unset($_SESSION['editquestion']);
 <p>Question successfully updated</p>
 <p><a href="index.blade.php?page=admin">Back to Teacher Panel</a></p>
 =======
+=======
+>>>>>>> parent of be7af9c... Updated
  <!DOCTYPE html>
 <html>
 <title>questionLogin</title>
@@ -100,5 +103,9 @@ unset($_SESSION['editquestion']);
 ?>
 	<h1>Edit Question</h1>
     <p>Question successfully updated</p>
+<<<<<<< HEAD
+	<p><a href="index.blade.php?page=admin">Back to Teacher Panel</a></p>
+>>>>>>> parent of be7af9c... Updated
+=======
 	<p><a href="index.blade.php?page=admin">Back to Teacher Panel</a></p>
 >>>>>>> parent of be7af9c... Updated

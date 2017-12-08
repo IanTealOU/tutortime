@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <title>Classroom</title>
@@ -239,6 +240,8 @@
 
 </body>
 =======
+=======
+>>>>>>> parent of be7af9c... Updated
 <!DOCTYPE html>
 <html>
 <title>Classroom</title>
@@ -449,5 +452,8 @@
 </footer>
 
 </body>
+<<<<<<< HEAD
+>>>>>>> parent of be7af9c... Updated
+=======
 >>>>>>> parent of be7af9c... Updated
 </html>

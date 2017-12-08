@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <!DOCTYPE html>
 <html>
@@ -66,6 +67,8 @@ $editcat_rs = mysqli_fetch_assoc($editcat_query);
 >>>>>>> tutorPractice
 <?php
 =======
+=======
+>>>>>>> parent of be7af9c... Updated
  <!DOCTYPE html>
 <html>
 <title>questionLogin</title>
@@ -119,5 +122,8 @@ $editcat_rs = mysqli_fetch_assoc($editcat_query);
     <?php do { ?>
 		<p><a href="index.blade.php?page=editcategory&categoryID=<?php echo $editcat_rs['categoryID']; ?>"><?php echo $editcat_rs['name']; ?></a></p>
 	<?php
+<<<<<<< HEAD
+>>>>>>> parent of be7af9c... Updated
+=======
 >>>>>>> parent of be7af9c... Updated
 	} while ($editcat_rs=mysqli_fetch_assoc($editcat_query)) ?>

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?php include('quizServer.blade.php') ?>
         <!DOCTYPE html>
 <html>
@@ -149,6 +150,8 @@
 </body>
 
 =======
+=======
+>>>>>>> parent of be7af9c... Updated
 <?php include('quizServer.blade.php') ?>
 <!DOCTYPE html>
 <html>
@@ -297,5 +300,8 @@
 </div>
 </body>
 
+<<<<<<< HEAD
+>>>>>>> parent of be7af9c... Updated
+=======
 >>>>>>> parent of be7af9c... Updated
 </html>

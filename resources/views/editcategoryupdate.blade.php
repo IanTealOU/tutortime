@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
  <!DOCTYPE html>
 <html>
 <title>questionLogin</title>
@@ -62,6 +63,8 @@
 	<p><a href="index.php?page=admin">Back to admin panel</a></p>
 
 =======
+=======
+>>>>>>> parent of be7af9c... Updated
  <!DOCTYPE html>
 <html>
 <title>questionLogin</title>
@@ -114,5 +117,9 @@
 ?>
 	<h1>Edit category</h1>
     <p>Category successfully updated</p>
+<<<<<<< HEAD
+	<p><a href="index.blade.php?page=admin">Back to admin panel</a></p>
+>>>>>>> parent of be7af9c... Updated
+=======
 	<p><a href="index.blade.php?page=admin">Back to admin panel</a></p>
 >>>>>>> parent of be7af9c... Updated

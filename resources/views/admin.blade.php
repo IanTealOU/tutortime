@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?include("dbconnect.blade.php");?>
         <!DOCTYPE html>
 <html>
@@ -110,6 +111,8 @@
 
 </body>
 =======
+=======
+>>>>>>> parent of be7af9c... Updated
 <?include("dbconnect.blade.php");?>
  <!DOCTYPE html>
 <html>
@@ -193,5 +196,8 @@
     <p>Powered by TutorTime</p>
 </footer>
 </body>
+<<<<<<< HEAD
+>>>>>>> parent of be7af9c... Updated
+=======
 >>>>>>> parent of be7af9c... Updated
 </html>

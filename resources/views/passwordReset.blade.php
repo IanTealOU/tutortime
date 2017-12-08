@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?php include('dbconnect.blade.php') ?>
         <!DOCTYPE html>
 <html>
@@ -114,6 +115,8 @@
 </body>
 </html>
 =======
+=======
+>>>>>>> parent of be7af9c... Updated
 <?php include('dbconnect.blade.php') ?>
 <!DOCTYPE html>
 <html>
@@ -228,4 +231,7 @@
 
 </body>
 </html>
+<<<<<<< HEAD
+>>>>>>> parent of be7af9c... Updated
+=======
 >>>>>>> parent of be7af9c... Updated

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!doctype html>
 
 <html lang="{{ app()->getLocale() }}">
@@ -123,6 +124,8 @@
 </div>
 </body>
 =======
+=======
+>>>>>>> parent of be7af9c... Updated
 <!doctype html>
 
 <html lang="{{ app()->getLocale() }}">
@@ -227,5 +230,8 @@
             </div>
         </div>
     </body>
+<<<<<<< HEAD
+>>>>>>> parent of be7af9c... Updated
+=======
 >>>>>>> parent of be7af9c... Updated
 </html>

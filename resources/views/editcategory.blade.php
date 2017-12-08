@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <!DOCTYPE html>
 <html>
@@ -68,6 +69,8 @@ if (!isset($_SESSION['editcategory']['name'])) {
     </form>
 </form>
 =======
+=======
+>>>>>>> parent of be7af9c... Updated
  <!DOCTYPE html>
 <html>
 <title>questionLogin</title>
@@ -125,5 +128,9 @@ if (!isset($_SESSION['editcategory']['name'])) {
     <form action="index.blade.php?page=editcategoryconfirm" method="post">
 		<input name="name" value="<?php echo $_SESSION['editcategory']['name']; ?>" />
 		<input type="submit" name="update" value="Update" />
+<<<<<<< HEAD
+	</form>
+>>>>>>> parent of be7af9c... Updated
+=======
 	</form>
 >>>>>>> parent of be7af9c... Updated

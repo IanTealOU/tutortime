@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <meta charset="UTF-8">
@@ -108,6 +109,8 @@
 </body>
 </html>
 =======
+=======
+>>>>>>> parent of be7af9c... Updated
 <!DOCTYPE html>
 <html>
 <meta charset="UTF-8">
@@ -208,4 +211,7 @@
 
 </body>
 </html>
+<<<<<<< HEAD
+>>>>>>> parent of be7af9c... Updated
+=======
 >>>>>>> parent of be7af9c... Updated

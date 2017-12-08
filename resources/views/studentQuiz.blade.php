@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -265,6 +266,8 @@
 </body>
 
 =======
+=======
+>>>>>>> parent of be7af9c... Updated
 
 <!DOCTYPE html>
 <html>
@@ -582,5 +585,8 @@
 </div>
 </body>
 
+<<<<<<< HEAD
+>>>>>>> parent of be7af9c... Updated
+=======
 >>>>>>> parent of be7af9c... Updated
 </html>

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <!DOCTYPE html>
 <html>
@@ -78,6 +79,8 @@ if ($stock_query = mysqli_query($dbconnect, $stock_sql)) {
 } while ($stock_rs = mysqli_fetch_assoc($stock_query))
 ?>
 =======
+=======
+>>>>>>> parent of be7af9c... Updated
  <!DOCTYPE html>
 <html>
 <title>questionLogin</title>
@@ -150,5 +153,9 @@ if ($stock_query = mysqli_query($dbconnect, $stock_sql)) {
 		</div>
 	  <?php
 	  } while ($stock_rs=mysqli_fetch_assoc($stock_query))
+<<<<<<< HEAD
+	  ?>
+>>>>>>> parent of be7af9c... Updated
+=======
 	  ?>
 >>>>>>> parent of be7af9c... Updated

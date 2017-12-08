@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <title>Confirm Question</title>
@@ -175,6 +176,8 @@ $_SESSION['addQuestionStock']['thumbnail'] = "noimage.jpg";
 <p><a href="index.php?page=addQuestionStock">Go back</a> - <a href="index.php?page=enterstock">Confirm</a></p>
 
 =======
+=======
+>>>>>>> parent of be7af9c... Updated
  <!DOCTYPE html>
 <html>
 <title>Confirm Question</title>
@@ -326,5 +329,9 @@ $_SESSION['addQuestionStock']['thumbnail'] = "noimage.jpg";
 		<?php
 	}
 ?>
+<<<<<<< HEAD
+<p><a href="index.blade.php?page=addQuestionStock">Go back</a> - <a href="index.blade.php?page=enterstock">Confirm</a></p>
+>>>>>>> parent of be7af9c... Updated
+=======
 <p><a href="index.blade.php?page=addQuestionStock">Go back</a> - <a href="index.blade.php?page=enterstock">Confirm</a></p>
 >>>>>>> parent of be7af9c... Updated

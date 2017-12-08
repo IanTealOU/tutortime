@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?php
 //This file is the base for all pages in the site. When creating a new page, we just open this one, then save a copy as the new page.
 
@@ -45,6 +46,8 @@
 </body>
 </html>
 =======
+=======
+>>>>>>> parent of be7af9c... Updated
 <?php
 //This file is the base for all pages in the site. When creating a new page, we just open this one, then save a copy as the new page.
 	include("dbconnect.blade.php");
@@ -87,4 +90,7 @@
 </div><!-- Container ends here-->
 </body>
 </html>
+<<<<<<< HEAD
+>>>>>>> parent of be7af9c... Updated
+=======
 >>>>>>> parent of be7af9c... Updated

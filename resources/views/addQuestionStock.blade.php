@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
  <!DOCTYPE html>
 <html>
 <<<<<<< HEAD
@@ -163,6 +164,8 @@
 </footer>
 </body>
 =======
+=======
+>>>>>>> parent of be7af9c... Updated
  <!DOCTYPE html>
 <html>
 <title>TeacherQuestionLogin</title>
@@ -265,5 +268,8 @@
     <p>Powered by TutorTime</p>
 </footer>
 </body>
+<<<<<<< HEAD
+>>>>>>> parent of be7af9c... Updated
+=======
 >>>>>>> parent of be7af9c... Updated
 </html>

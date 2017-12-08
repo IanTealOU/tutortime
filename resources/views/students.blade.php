@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <title>Student Login</title>
@@ -59,6 +60,8 @@ if (isset($_POST['students'])) {
 </footer>
 </body>
 =======
+=======
+>>>>>>> parent of be7af9c... Updated
 <!DOCTYPE html>
 <html>
 <title>Student Login</title>
@@ -111,5 +114,8 @@ if (isset($_POST['students'])) {
     <p>Powered by TutorTime</p>
 </footer>
 </body>
+<<<<<<< HEAD
+>>>>>>> parent of be7af9c... Updated
+=======
 >>>>>>> parent of be7af9c... Updated
 </html>

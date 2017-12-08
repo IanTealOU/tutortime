@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!DOCTYPE html>
 <title>Teacher Class</title>
 <meta charset="UTF-8">
@@ -236,6 +237,8 @@
 </script>
 
 =======
+=======
+>>>>>>> parent of be7af9c... Updated
 <!DOCTYPE html>
 <html>
 <title>Teacher Class</title>
@@ -465,4 +468,7 @@
     }
 </script>
 
+<<<<<<< HEAD
+>>>>>>> parent of be7af9c... Updated
+=======
 >>>>>>> parent of be7af9c... Updated

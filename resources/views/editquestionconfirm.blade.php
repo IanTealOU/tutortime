@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <title>Edit Question</title>
@@ -46,6 +47,8 @@ $_SESSION['editquestion']['question'] = $_POST['question'];
 <p><a href="index.blade.php?page=editcategoryupdate">Confirm</a> | <a href="index.blade.php?page=editcategory">Oops, go
         back</a> | <a href="index.blade.php?page=admin">Back to Your Teacher Page</a></p>
 =======
+=======
+>>>>>>> parent of be7af9c... Updated
  <!DOCTYPE html>
 <html>
 <title>Edit Question</title>
@@ -91,5 +94,9 @@ $_SESSION['editquestion']['question'] = $_POST['question'];
 ?>
 	<h1>Edit your question</h1>
     <p>Updated Question is: <?php echo $_SESSION['editquestion']['question']; ?></p>
+<<<<<<< HEAD
+	<p><a href="index.blade.php?page=editcategoryupdate">Confirm</a> | <a href="index.blade.php?page=editcategory">Oops, go back</a> | <a href="index.blade.php?page=admin">Back to Your Teacher Page</a></p>
+>>>>>>> parent of be7af9c... Updated
+=======
 	<p><a href="index.blade.php?page=editcategoryupdate">Confirm</a> | <a href="index.blade.php?page=editcategory">Oops, go back</a> | <a href="index.blade.php?page=admin">Back to Your Teacher Page</a></p>
 >>>>>>> parent of be7af9c... Updated

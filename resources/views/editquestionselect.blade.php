@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <title>questionLogin</title>
@@ -53,6 +54,8 @@ $editcat_rs = mysqli_fetch_assoc($editcat_query);
 <?php
 } while ($editcat_rs = mysqli_fetch_assoc($editcat_query)) ?>
 =======
+=======
+>>>>>>> parent of be7af9c... Updated
  <!DOCTYPE html>
 <html>
 <title>questionLogin</title>
@@ -104,5 +107,9 @@ $editcat_rs = mysqli_fetch_assoc($editcat_query);
     <?php do { ?>
 		<p><a href="index.blade.php?page=editquestion&question=<?php echo $editcat_rs['question']; ?>"><?php echo $editcat_rs['question']; ?></a></p>
 	<?php
+<<<<<<< HEAD
+	} while ($editcat_rs=mysqli_fetch_assoc($editcat_query)) ?>
+>>>>>>> parent of be7af9c... Updated
+=======
 	} while ($editcat_rs=mysqli_fetch_assoc($editcat_query)) ?>
 >>>>>>> parent of be7af9c... Updated
