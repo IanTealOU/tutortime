@@ -1,5 +1,4 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
 
 <!DOCTYPE html>
 <html>
@@ -68,8 +67,6 @@
     <p><a href="index.blade.php?page=addQuestionStock">Add Question to Category</a></p>
 </div>
 =======
-=======
->>>>>>> parent of be7af9c... Updated
 <!DOCTYPE html>
 <html>
 <title>Teacher</title>
@@ -121,7 +118,4 @@
         </div>
     </header>
  
-<<<<<<< HEAD
->>>>>>> parent of be7af9c... Updated
-=======
 >>>>>>> parent of be7af9c... Updated

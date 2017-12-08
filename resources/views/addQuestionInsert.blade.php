@@ -1,5 +1,4 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
 
 <!DOCTYPE html>
 <html>
@@ -80,8 +79,6 @@
 	  <p><a href="index.php?page=admin">Back to admin panel</a></p>
 
 =======
-=======
->>>>>>> parent of be7af9c... Updated
 <!DOCTYPE html>
 <html>
 <title>questionLogin</title>
@@ -147,9 +144,5 @@
     <p>Powered by TutorTime</p>
 </footer>
 </body>
-<<<<<<< HEAD
-</html>
->>>>>>> parent of be7af9c... Updated
-=======
 </html>
 >>>>>>> parent of be7af9c... Updated

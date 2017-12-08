@@ -1,5 +1,4 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <title>questionLogin</title>
@@ -56,8 +55,6 @@ $delstock_query = mysqli_query($dbconnect, $delstock_sql);
 <p>Your Question has been deleted successfully</p>
 <p><a href="index.blade.php?page=admin">Return to Teacher Panel</a></p>
 =======
-=======
->>>>>>> parent of be7af9c... Updated
  <!DOCTYPE html>
 <html>
 <title>questionLogin</title>
@@ -112,9 +109,5 @@ $delstock_query = mysqli_query($dbconnect, $delstock_sql);
 ?>
 	<h1>Question Deleted</h1>
       <p>Your Question has been deleted successfully</p>
-<<<<<<< HEAD
-	  <p><a href="index.blade.php?page=admin">Return to Teacher Panel</a></p>
->>>>>>> parent of be7af9c... Updated
-=======
 	  <p><a href="index.blade.php?page=admin">Return to Teacher Panel</a></p>
 >>>>>>> parent of be7af9c... Updated

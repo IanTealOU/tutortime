@@ -1,5 +1,4 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
 <!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -95,8 +94,6 @@ do { ?>
     <a href="index.php?page=deletecategoryconfirm&category" ?>
     </a></a>
 =======
-=======
->>>>>>> parent of be7af9c... Updated
 <!DOCTYPE html>
 <html>
 <meta charset="UTF-8">
@@ -196,9 +193,5 @@ do { ?>
 			<?php
 			} while ($delcat_rs=mysqli_fetch_assoc($delcat_query));
 			?>
-<<<<<<< HEAD
-			<a href="index.blade.php?page=admin&logout=true" class="w3-bar-item w3-button">Logout</a>
->>>>>>> parent of be7af9c... Updated
-=======
 			<a href="index.blade.php?page=admin&logout=true" class="w3-bar-item w3-button">Logout</a>
 >>>>>>> parent of be7af9c... Updated

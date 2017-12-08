@@ -1,5 +1,4 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
 <?php include('studentServer.blade.php') ?>
 
         <!DOCTYPE html>
@@ -73,8 +72,6 @@
 
 </body>
 =======
-=======
->>>>>>> parent of be7af9c... Updated
 <?php include('dbconnect.blade.php') ?>
 
 <!DOCTYPE html>
@@ -139,8 +136,5 @@
 </footer>
 
 </body>
-<<<<<<< HEAD
->>>>>>> parent of be7af9c... Updated
-=======
 >>>>>>> parent of be7af9c... Updated
 </html>

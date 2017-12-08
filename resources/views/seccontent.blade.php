@@ -1,5 +1,4 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
 <div class="seccontent">
     <table width="259" border="0" cellspacing="0" cellpadding="0">
         <tr>
@@ -35,8 +34,6 @@
     </table>
 </div><!--End of secondary content-->
 =======
-=======
->>>>>>> parent of be7af9c... Updated
 <div class="seccontent">
     <table width="259" border="0" cellspacing="0" cellpadding="0">
   <tr>
@@ -61,9 +58,5 @@
     <td>&nbsp;</td>
   </tr>
 </table>
-<<<<<<< HEAD
-    </div><!--End of secondary content-->
->>>>>>> parent of be7af9c... Updated
-=======
     </div><!--End of secondary content-->
 >>>>>>> parent of be7af9c... Updated

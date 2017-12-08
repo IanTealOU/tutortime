@@ -1,5 +1,4 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
 
 <!DOCTYPE html>
 <html>
@@ -64,8 +63,6 @@ if (!isset($_SESSION['admin'])) {
 <p><a href="index.blade.php?page=admin">Return to admin panel</a></p>
 
 =======
-=======
->>>>>>> parent of be7af9c... Updated
  <!DOCTYPE html>
 <html>
 <title>questionLogin</title>
@@ -120,9 +117,5 @@ if (!isset($_SESSION['admin'])) {
 ?>
 	<h1>Category Deleted</h1>
       <p>Category has successfully been deleted</p>
-<<<<<<< HEAD
-	  <p><a href="index.blade.php?page=admin">Return to admin panel</a></p>
->>>>>>> parent of be7af9c... Updated
-=======
 	  <p><a href="index.blade.php?page=admin">Return to admin panel</a></p>
 >>>>>>> parent of be7af9c... Updated

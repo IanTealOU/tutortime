@@ -1,5 +1,4 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
 <?php
 session_start();
 
@@ -21,8 +20,6 @@ unset($_SESSION['addQuestionStock']);
 <p><a href="index.php?page=admin">Back to admin</a></p>
 
 =======
-=======
->>>>>>> parent of be7af9c... Updated
 <?php
 	session_start();
 	
@@ -38,9 +35,5 @@ unset($_SESSION['addQuestionStock']);
 	unset($_SESSION['addQuestionStock']);
 ?>
 <p>Add New Question to the Category</p>
-<<<<<<< HEAD
-<p><a href="index.blade.php?page=admin">Back to admin</a></p>
->>>>>>> parent of be7af9c... Updated
-=======
 <p><a href="index.blade.php?page=admin">Back to admin</a></p>
 >>>>>>> parent of be7af9c... Updated

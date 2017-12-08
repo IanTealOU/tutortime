@@ -1,5 +1,4 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <title>questionLogin</title>
@@ -62,8 +61,6 @@ $_SESSION['addQuestion'] = $_POST['name'];
     | <a href="index.php?page=admin">Back to admin panel</a></p>
 
 =======
-=======
->>>>>>> parent of be7af9c... Updated
 <!DOCTYPE html>
 <html>
 <title>questionLogin</title>
@@ -114,9 +111,5 @@ $_SESSION['addQuestion'] = $_POST['name'];
 ?>
 	<h1>Add new category</h1>
       <p>You entered: <?php echo $_SESSION['addQuestion']; ?></p>
-<<<<<<< HEAD
-	  <p><a href="index.blade.php?page=addQuestioninsert">Confirm</a> | <a href="index.blade.php?page=addQuestion&update=true">Go back</a> | <a href="index.blade.php?page=admin">Back to admin panel</a></p>
->>>>>>> parent of be7af9c... Updated
-=======
 	  <p><a href="index.blade.php?page=addQuestioninsert">Confirm</a> | <a href="index.blade.php?page=addQuestion&update=true">Go back</a> | <a href="index.blade.php?page=admin">Back to admin panel</a></p>
 >>>>>>> parent of be7af9c... Updated
