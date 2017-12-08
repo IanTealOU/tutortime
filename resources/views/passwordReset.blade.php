@@ -1,5 +1,5 @@
 <?php include('dbconnect.blade.php') ?>
-        <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -65,7 +65,7 @@
 
 </style>
 <header>
-    <div class="flex-center position-ref full-height"></div>
+    <div class="flex-center position-ref full-height">
 
         <div class="top-right links">
 
@@ -82,15 +82,15 @@
 
 <form method="post" action="admin.blade.php">
 
-<!--<?php include('errors.blade.php'); ?> -->
-    <div class="input-group">
+   <!--<?php include('errors.blade.php'); ?> -->
+   <div class="input-group">
         <label>Student's Name:</label>
-        <input type="password" name="password">
+        <input type="password" name="password" >
     </div>
 
     <div class="input-group">
         <label>Old Password:</label>
-        <input type="password" name="password">
+        <input type="password" name="password" >
     </div>
     <div class="input-group">
         <label>New Password</label>

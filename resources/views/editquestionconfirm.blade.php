@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <title>Edit Question</title>
 <meta charset="UTF-8">
@@ -19,28 +19,28 @@
         margin-bottom: 12px
     }
 </style>
-<form>
+<body>
 
-    <!-- !PAGE CONTENT! -->
-    <div class="w3-content" style="max-width:1500px">
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
 
-        <!-- Header -->
-        <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px"></header>
+    <!-- Header -->
+    <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px"></header>
+    
+</div>
 
-    </div>
-
-
+   
+    
 </form>
 <?php
 //This file is the base for all pages in the site. When creating a new page, we just open this one, then save a copy as the new page.
-include("dbconnect.blade.php");
-session_start();
-if (!isset($_SESSION['admin'])) {
-    header("Location:index.blade.php");
-}
-$_SESSION['editquestion']['question'] = $_POST['question'];
+	include("dbconnect.blade.php");
+	session_start();
+	if(!isset($_SESSION['admin'])) {
+		header("Location:index.blade.php");
+	}
+	$_SESSION['editquestion']['question']=$_POST['question'];
 ?>
-<h1>Edit your question</h1>
-<p>Updated Question is: <?php echo $_SESSION['editquestion']['question']; ?></p>
-<p><a href="index.blade.php?page=editcategoryupdate">Confirm</a> | <a href="index.blade.php?page=editcategory">Oops, go
-        back</a> | <a href="index.blade.php?page=admin">Back to Your Teacher Page</a></p>
+	<h1>Edit your question</h1>
+    <p>Updated Question is: <?php echo $_SESSION['editquestion']['question']; ?></p>
+	<p><a href="index.blade.php?page=editcategoryupdate">Confirm</a> | <a href="index.blade.php?page=editcategory">Oops, go back</a> | <a href="index.blade.php?page=admin">Back to Your Teacher Page</a></p>

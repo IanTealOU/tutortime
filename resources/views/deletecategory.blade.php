@@ -1,5 +1,5 @@
-
-<!DOCTYPE html>
+<<<<<<< HEAD
+ <!DOCTYPE html>
 <html>
 <title>questionLogin</title>
 <meta charset="UTF-8">
@@ -19,7 +19,9 @@
     .w3-row-padding img {
         margin-bottom: 12px
     }
-
+    .content {
+                text-align: center;
+            }
 </style>
 <body>
 
@@ -28,36 +30,39 @@
 
     <!-- Header -->
     <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px"></header>
-
+    
 </div>
 
 <form method="post" action="addQuestion.blade.php">
 
-
+    
+    
 </form>
 <?php
 //This file is the base for all pages in the site. When creating a new page, we just open this one, then save a copy as the new page.
-include("dbconnect.blade.php");
-session_start();
-if (!isset($_SESSION['admin'])) {
-    header("Location:index.blade.php");
-
-//This file is the base for all pages in the site. When creating a new page, we just open this one, then save a copy as the new page.
 	include("dbconnect.blade.php");
 	session_start();
-	if (!isset($_SESSION['admin'])) {
-        header("Location:index.php");
+	if(!isset($_SESSION['admin'])) {
+		header("Location:index.blade.php");
+=======
+<?php
+//This file is the base for all pages in the site. When creating a new page, we just open this one, then save a copy as the new page.
+	include("dbconnect.php");
+	session_start();
+	if(!isset($_SESSION['admin'])) {
+		header("Location:index.php");
+>>>>>>> tutorPractice
 	}
-	$delcat_sql = "DELETE FROM category WHERE categoryID=" . $_GET['categoryID'];
-	$delcat_query = mysqli_query($dbconnect, $delcat_sql);
+	$delcat_sql="DELETE FROM category WHERE categoryID=".$_GET['categoryID'];
+	$delcat_query=mysqli_query($dbconnect, $delcat_sql);
 	
-	$delstock_sql = "DELETE FROM stock WHERE categoryID=" . $_GET['categoryID'];
-	$delstock_query = mysqli_query($dbconnect, $delstock_sql);
+	$delstock_sql="DELETE FROM stock WHERE categoryID=".$_GET['categoryID'];
+	$delstock_query=mysqli_query($dbconnect, $delstock_sql);
 ?>
-<h1>Category Deleted</h1>
-<p>Category has successfully been deleted</p>
-
-<p><a href="index.blade.php?page=admin">Return to admin panel</a></p>
-
-<p><a href="index.blade.php?page=admin">Return to admin panel</a></p>
-
+	<h1>Category Deleted</h1>
+      <p>Category has successfully been deleted</p>
+<<<<<<< HEAD
+	  <p><a href="index.blade.php?page=admin">Return to admin panel</a></p>
+=======
+	  <p><a href="index.php?page=admin">Return to admin panel</a></p>
+>>>>>>> tutorPractice

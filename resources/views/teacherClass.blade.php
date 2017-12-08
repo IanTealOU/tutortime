@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <title>Teacher Class</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -6,17 +7,9 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-    body, h1 {
-        font-family: "Raleway", Arial, sans-serif
-    }
-
-    h1 {
-        letter-spacing: 6px
-    }
-
-    .w3-row-padding img {
-        margin-bottom: 12px
-    }
+    body,h1 {font-family: "Raleway", Arial, sans-serif}
+    h1 {letter-spacing: 6px}
+    .w3-row-padding img {margin-bottom: 12px}
 </style>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -82,7 +75,7 @@
 
 </style>
 <header>
-    <div class="flex-center position-ref full-height"></div>
+    <div class="flex-center position-ref full-height">
 
         <div class="top-right links">
 
@@ -97,7 +90,7 @@
     }
 
     #myInput {
-        //background-image: url('/css/searchicon.png');
+        background-image: url('/css/searchicon.png');
         background-position: 10px 10px;
         background-repeat: no-repeat;
         width: 100%;
@@ -132,7 +125,7 @@
     }
 
     #myInput2 {
-       // background-image: url('/css/searchicon.png');
+        background-image: url('/css/searchicon.png');
         background-position: 10px 10px;
         background-repeat: no-repeat;
         width: 100%;

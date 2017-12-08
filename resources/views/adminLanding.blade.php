@@ -1,7 +1,8 @@
 <?php include('dbconnect.blade.php') ?>
 
 
-        <!DOCTYPE html>
+
+<!DOCTYPE html>
 <html>
 <title>Teacher</title>
 <meta charset="UTF-8">
@@ -10,17 +11,9 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-    body, h1 {
-        font-family: "Raleway", Arial, sans-serif
-    }
-
-    h1 {
-        letter-spacing: 6px
-    }
-
-    .w3-row-padding img {
-        margin-bottom: 12px
-    }
+    body,h1 {font-family: "Raleway", Arial, sans-serif}
+    h1 {letter-spacing: 6px}
+    .w3-row-padding img {margin-bottom: 12px}
 </style>
 <body>
 
@@ -41,19 +34,19 @@
     </header>
     <!-- End Page Content -->
     <!-- notification message -->
-    <?php if (isset($_SESSION['success'])) : ?>
-    <div class="error success">
-        <h3>
-            <?php
-            echo $_SESSION['success'];
-            unset($_SESSION['success']);
-            ?>
-        </h3>
-    </div>
-    <?php endif ?>
+        <?php if (isset($_SESSION['success'])) : ?>
+            <div class="error success" >
+                <h3>
+                    <?php 
+                        echo $_SESSION['success']; 
+                        unset($_SESSION['success']);
+                    ?>
+                </h3>
+            </div>
+        <?php endif ?>
 
-<!-- logged in teacher information -->
-    <?php  if (isset($_SESSION['username'])) : ?>
+        <!-- logged in teacher information -->
+        <?php  if (isset($_SESSION['username'])) : ?>
             
         <?php endif ?>
 

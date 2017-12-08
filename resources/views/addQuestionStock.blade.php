@@ -22,11 +22,11 @@
     .w3-row-padding img {
         margin-bottom: 12px
     }
-
+<<<<<<< HEAD
     .content {
                 text-align: center;
             }
-
+=======
 >>>>>>> tutorPractice
 </style>
 <body>
@@ -51,9 +51,8 @@
     
     if(!isset($_SESSION['admin'])) {
         header("Location:index.blade.php");
-        ?>
-</body>
-
+=======
+    <h1>Welcome <?php echo $_SESSION['name']; ?></h1>
 </div>
 
 <form method="post" action="questionLogin.blade.php">
@@ -99,7 +98,7 @@
     
     if(!isset($_SESSION['admin'])) {
         header("Location:index.php");
-
+>>>>>>> tutorPractice
     }
     if(!isset($_SESSION['addQuestionStock'])) {
         $_SESSION['addQuestionStock']['name']="";
@@ -119,11 +118,11 @@
     
 ?>
 <div class="maincontent">
-
+<<<<<<< HEAD
     <p><a href="adminLanding.blade.php">Back to admin</a></p>
-
+=======
     <p><a href="index.blade.php?page=admin">Back to admin</a></p>
-
+>>>>>>> tutorPractice
     <h1>Please enter your Question</h1>
     <form method="post" action="index.blade.php?page=confirmQuestion" enctype="multipart/form-data">
         <p>Question Name: <input type="text" name="name" value="<?php echo $_SESSION['addQuestionStock']['name']; ?>" /></p>
@@ -146,7 +145,7 @@
             
         
         <p>question: <textarea name="question" cols=60 rows=5><?php echo $_SESSION['addQuestionStock']['question']; ?></textarea></p>
-        <p>answer: <input type="text" name="answer" value="<?php echo $_SESSION['addQuestionStock']['answer']; ?>}" /></p>
+        <p>answer: <input type="text" name="answer" value="<?php echo $_SESSION['addQuestionStock']['answer']; ?>" /></p>
         <input type="submit" name="submit" value="Submit" />
     </form>
 </div>
