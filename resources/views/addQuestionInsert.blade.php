@@ -20,13 +20,13 @@
     }
 </style>
 <header>
-    <div class="flex-center position-ref full-height">
+    <div class="flex-center position-ref full-height"></div>
 
-        <div class="top-right links">
+    <div class="top-right links">
 
-            <a href="adminLanding.blade.php">Home</a>
+        <a href="adminLanding.blade.php">Home</a>
 
-        </div>
+    </div>
 </header>
 <body>
 
@@ -35,29 +35,28 @@
 
     <!-- Header -->
     <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px"></header>
-    
+
 </div>
 
 <form method="post" action="addQuestion.blade.php">
 
-    
-    
+
 </form>
 
 <?php
 //This file is the base for all pages in the site. When creating a new page, we just open this one, then save a copy as the new page.
-	include("dbconnect.blade.php");
-	session_start();
-	if(!isset($_SESSION['admin'])) {
-		header("Location:index.blade.php");
-	}
-	$newcat_sql="INSERT INTO category (name) VALUES ('".$_SESSION['addQuestion']."')";
-	$newcat_query=mysqli_query($dbconnect, $newcat_sql);
-	unset($_SESSION['addQuestion']);
+include("dbconnect.blade.php");
+session_start();
+if (!isset($_SESSION['admin'])) {
+    header("Location:index.blade.php");
+}
+$newcat_sql = "INSERT INTO category (name) VALUES ('" . $_SESSION['addQuestion'] . "')";
+$newcat_query = mysqli_query($dbconnect, $newcat_sql);
+unset($_SESSION['addQuestion']);
 ?>
-	<h1>New Added Category</h1>
-      <p>New Category Entered</p>
-	  <p><a href="index.blade.php?page=admin">Back to admin panel</a></p>
+<h1>New Added Category</h1>
+<p>New Category Entered</p>
+<p><a href="index.blade.php?page=admin">Back to admin panel</a></p>
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large">
     <p>Powered by TutorTime</p>

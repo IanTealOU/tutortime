@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <title>questionLogin</title>
 <meta charset="UTF-8">
@@ -26,27 +26,29 @@
 
     <!-- Header -->
     <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px"></header>
-    
+
 </div>
 
-   
-    
+
 </form>
 <?php
 //This file is the base for all pages in the site. When creating a new page, we just open this one, then save a copy as the new page.
-	include("dbconnect.blade.php");
-	session_start();
-	if(!isset($_SESSION['admin'])) {
-		header("Location:index.blade.php");
-	}
-	unset($_SESSION['editquestion']);
-	
-	$editcat_sql="SELECT * FROM stock";
-	$editcat_query=mysqli_query($dbconnect, $editcat_sql);
-	$editcat_rs=mysqli_fetch_assoc($editcat_query);
+include("dbconnect.blade.php");
+session_start();
+if (!isset($_SESSION['admin'])) {
+    header("Location:index.blade.php");
+}
+unset($_SESSION['editquestion']);
+
+$editcat_sql = "SELECT * FROM stock";
+$editcat_query = mysqli_query($dbconnect, $editcat_sql);
+$editcat_rs = mysqli_fetch_assoc($editcat_query);
 ?>
-	<h1>Edit Question</h1>
-    <?php do { ?>
-		<p><a href="index.blade.php?page=editquestion&question=<?php echo $editcat_rs['question']; ?>"><?php echo $editcat_rs['question']; ?></a></p>
-	<?php
-	} while ($editcat_rs=mysqli_fetch_assoc($editcat_query)) ?>
+<h1>Edit Question</h1>
+<?php do { ?>
+<p>
+    <a href="index.blade.php?page=editquestion&question=<?php echo $editcat_rs['question']; ?>"><?php echo $editcat_rs['question']; ?></a>
+</p>
+<?php
+} while ($editcat_rs = mysqli_fetch_assoc($editcat_query)) ?>
+</body>

@@ -1,5 +1,5 @@
 <?include("dbconnect.blade.php");?>
-<!DOCTYPE html>
+        <!DOCTYPE html>
 <html>
 <title>Login</title>
 <meta charset="UTF-8">
@@ -17,37 +17,38 @@
     }
 
     .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
     .content {
-                text-align: center;
-            }
+        text-align: center;
+    }
 </style>
 </head>
 <body>
 
-	<div class="header">
-		<h2>Login</h2>
-	</div>
-	
-	<form action="index.blade.php?page=admin" method="post">
-	<p>Username:<input name="username" /></p>
-	<p>Password:<input name="password" type="password" /></p>
-	<?php
-	if(isset($_GET['error'])) {
-		echo "Incorrect username or password";
-	}
-	
-	?>
-	<p><input type="submit" name="login" /></p>
+<div class="header">
+    <h2>Login</h2>
+</div>
+
+<form action="index.blade.php?page=admin" method="post">
+    <p>Username:<input name="username"/></p>
+    <p>Password:<input name="password" type="password"/></p>
+    <?php
+    if (isset($_GET['error'])) {
+        echo "Incorrect username or password";
+    }
+
+    ?>
+    <p><input type="submit" name="login"/></p>
 </form>
-		
-		 <p>
-			Go to Welcome Page <a href="welcome.blade.php">--></a>
-		</p>
-	</form>
+
+<p>
+    Go to Welcome Page <a href="welcome.blade.php">--></a>
+</p>
+</form>
 
 </body>
 </html>

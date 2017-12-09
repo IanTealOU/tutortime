@@ -16,7 +16,7 @@
     }
 
     .w3-row-padding img {
-        margin-bottom: 12px
+		margin-bottom: 12px
     }
     .content {
                 text-align: center;

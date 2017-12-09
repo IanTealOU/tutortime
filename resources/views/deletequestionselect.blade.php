@@ -54,9 +54,8 @@
         margin-bottom: 5px;
     }
 </style>
-</style>
 <header>
-    <div class="flex-center position-ref full-height">
+	<div class="flex-center position-ref full-height"></div>
 
         <div class="top-right links">
 
@@ -71,13 +70,13 @@
 
     <!-- Header -->
     <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px"></header>
-    
+
 </div>
 
 <form method="post" action="deletecategoryselect.blade.php">
 
-    
-    
+
+
 </form>
 <?php
 //This file is the base for all pages in the site. When creating a new page, we just open this one, then save a copy as the new page.
@@ -93,7 +92,7 @@
 			$delcat_rs=mysqli_fetch_assoc($delcat_query);
 			do { ?>
 			<p><a href="index.blade.php?page=deletequestionconfirm&question=<?php echo $delcat_rs['question']; ?>" class="w3-bar-item w3-button"><?php echo $delcat_rs['question']; ?></a></p>
-			
+
 			<?php
 			} while ($delcat_rs=mysqli_fetch_assoc($delcat_query));
 			?>

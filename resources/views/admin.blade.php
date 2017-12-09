@@ -1,5 +1,5 @@
 <?include("dbconnect.blade.php");?>
- <!DOCTYPE html>
+        <!DOCTYPE html>
 <html>
 <title>Admin</title>
 <meta charset="UTF-8">
@@ -19,62 +19,62 @@
     .w3-row-padding img {
         margin-bottom: 12px
     }
+
     .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
     .content {
-                text-align: center;
-            }
+        text-align: center;
+    }
 </style>
 <body>
-
 <!-- !PAGE CONTENT! -->
 <div class="w3-content" style="max-width:1500px">
 
     <!-- Header -->
     <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px"></header>
-    
+
 </div>
 
-   
-    
+
 </form>
 </head>
-<body>
-	
-	</div>
-	<div class="content">
 
-		<!-- notification message -->
-	<?php
-//This file is the base for all pages in the site. When creating a new page, we just open this one, then save a copy as the new page.
-	
+
+</div>
+<div class="content">
+
+    <!-- notification message -->
+    <?php
+    //This file is the base for all pages in the site. When creating a new page, we just open this one, then save a copy as the new page.
+
     session_start();
-	if(isset($_GET['logout'])) {
-		unset($_SESSION['admin']);
-	}
-	
-	if(isset($_POST['login'])) {
-		$login_sql="SELECT * FROM user WHERE username='".$_POST['username']."' AND password='".($_POST['password'])."'";
-		$login_query=mysqli_query($dbconnect, $login_sql);
-		if(mysqli_num_rows($login_query)>0) {
-			$login_rs=mysqli_fetch_assoc($login_query);
-			$_SESSION['admin']=$login_rs['userid'];
-		} else {
-			header("Location:index.blade.php?page=admin&error=login");
-		}
-	}
-?>
-      <?php if(!isset($_SESSION['admin'])) {
-		include("login.blade.php");
-		} else {
-		include("adminpanel.blade.php");
-		}
-		?>
-	</div>
-		
+    if (isset($_GET['logout'])) {
+        unset($_SESSION['admin']);
+    }
+
+    if (isset($_POST['login'])) {
+        $login_sql = "SELECT * FROM user WHERE username='" . $_POST['username'] . "' AND password='" . ($_POST['password']) . "'";
+        $login_query = mysqli_query($dbconnect, $login_sql);
+        if (mysqli_num_rows($login_query) > 0) {
+            $login_rs = mysqli_fetch_assoc($login_query);
+            $_SESSION['admin'] = $login_rs['userid'];
+        } else {
+            header("Location:index.blade.php?page=admin&error=login");
+        }
+    }
+    ?>
+    <?php if (!isset($_SESSION['admin'])) {
+        include("login.blade.php");
+    } else {
+        include("adminpanel.blade.php");
+    }
+    ?>
+</div>
+
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large">

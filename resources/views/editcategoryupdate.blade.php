@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <title>questionLogin</title>
 <meta charset="UTF-8">
@@ -26,28 +26,27 @@
 
     <!-- Header -->
     <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px"></header>
-    
+
 </div>
 
 <form method="post" action="addQuestion.blade.php">
 
-    
-    
+
 </form>
 <?php
 //This file is the base for all pages in the site. When creating a new page, we just open this one, then save a copy as the new page.
-	include("dbconnect.blade.php");
-	session_start();
-	if(!isset($_SESSION['admin'])) {
-		header("Location:index.blade.php");
-	}
-	
-	
-	$editcat_sql="UPDATE category SET name='".$_SESSION['editcategory']['name']."' WHERE categoryID=".$_SESSION['editcategory']['categoryID'];
-	$editcat_query=mysqli_query($dbconnect, $editcat_sql);
-	
-	unset($_SESSION['editcategory']);
+include("dbconnect.blade.php");
+session_start();
+if (!isset($_SESSION['admin'])) {
+    header("Location:index.blade.php");
+}
+
+
+$editcat_sql = "UPDATE category SET name='" . $_SESSION['editcategory']['name'] . "' WHERE categoryID=" . $_SESSION['editcategory']['categoryID'];
+$editcat_query = mysqli_query($dbconnect, $editcat_sql);
+
+unset($_SESSION['editcategory']);
 ?>
-	<h1>Edit category</h1>
-    <p>Category successfully updated</p>
-	<p><a href="index.blade.php?page=admin">Back to admin panel</a></p>
+<h1>Edit category</h1>
+<p>Category successfully updated</p>
+<p><a href="index.blade.php?page=admin">Back to admin panel</a></p>

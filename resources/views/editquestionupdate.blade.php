@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <title>questionLogin</title>
 <meta charset="UTF-8">
@@ -20,32 +20,32 @@
     }
 </style>
 <body>
-
 <!-- !PAGE CONTENT! -->
 <div class="w3-content" style="max-width:1500px">
 
     <!-- Header -->
     <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px"></header>
-    
+
 </div>
 
- 
-    
+
 </form>
 <?php
 //This file is the base for all pages in the site. When creating a new page, we just open this one, then save a copy as the new page.
-	include("dbconnect.blade.php");
-	session_start();
-	if(!isset($_SESSION['admin'])) {
-		header("Location:index.blade.php");
-	}
-	
-	
-	$editcat_sql="UPDATE stock SET name='".$_SESSION['editquestion']['question']."' WHERE question=".$_SESSION['editquestion']['question'];
-	$editcat_query=mysqli_query($dbconnect, $editcat_sql);
-	
-	unset($_SESSION['editquestion']);
+include("dbconnect.blade.php");
+session_start();
+if (!isset($_SESSION['admin'])) {
+    header("Location:index.blade.php");
+}
+
+
+$editcat_sql = "UPDATE stock SET name='" . $_SESSION['editquestion']['question'] . "' WHERE question=" . $_SESSION['editquestion']['question'];
+$editcat_query = mysqli_query($dbconnect, $editcat_sql);
+
+unset($_SESSION['editquestion']);
 ?>
-	<h1>Edit Question</h1>
-    <p>Question successfully updated</p>
-	<p><a href="index.blade.php?page=admin">Back to Teacher Panel</a></p>
+<h1>Edit Question</h1>
+<p>Question successfully updated</p>
+<p><a href="index.blade.php?page=admin">Back to Teacher Panel</a></p>
+
+</body>
